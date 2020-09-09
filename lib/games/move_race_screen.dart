@@ -142,6 +142,7 @@ class MoveRaceScreen extends StatelessWidget {
                   ScreenConfig.textSizeMultiplier,
                 ),
               ),
+              Image.asset('assets/images/balap_memindah_batang_kayu.jpg'),
             ],
           ),
         ),

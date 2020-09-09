@@ -190,6 +190,7 @@ class ZigZagRaceScreen extends StatelessWidget {
                   ScreenConfig.textSizeMultiplier,
                 ),
               ),
+              Image.asset('assets/images/kereta_zig_zag.jpg'),
             ],
           ),
         ),

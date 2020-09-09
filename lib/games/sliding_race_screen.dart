@@ -214,6 +214,7 @@ class SlidingRaceScreen extends StatelessWidget {
                   ScreenConfig.textSizeMultiplier,
                 ),
               ),
+              Image.asset('assets/images/balap_meluncur.jpg'),
             ],
           ),
         ),

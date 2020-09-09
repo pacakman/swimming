@@ -190,6 +190,7 @@ class TipToeRaceScreen extends StatelessWidget {
                   ScreenConfig.textSizeMultiplier,
                 ),
               ),
+              Image.asset('assets/images/jalan_jinjit.jpg'),
             ],
           ),
         ),
