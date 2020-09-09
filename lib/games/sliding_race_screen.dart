@@ -23,7 +23,7 @@ class SlidingRaceScreen extends StatelessWidget {
               Text(
                 'Cara Bermain:',
                 style: MyTextTheme.style(
-                  TextType.body3,
+                  TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                   isBold: true,
                 ),
@@ -34,7 +34,7 @@ class SlidingRaceScreen extends StatelessWidget {
                   Text(
                     '1)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -45,7 +45,7 @@ class SlidingRaceScreen extends StatelessWidget {
                     child: Text(
                       'Pemain berdiri ditepi kolam dengan posisi membungkuk kedua tangan lurus kedepan dan kaki kanan menekuk telapak kaki menempel tembok.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -58,7 +58,7 @@ class SlidingRaceScreen extends StatelessWidget {
                   Text(
                     '2)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -69,7 +69,7 @@ class SlidingRaceScreen extends StatelessWidget {
                     child: Text(
                       'Posisi kaki kanan siap menendang tembok untuk menghasilkan luncuran badan kedepan.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -82,7 +82,7 @@ class SlidingRaceScreen extends StatelessWidget {
                   Text(
                     '3)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -93,7 +93,7 @@ class SlidingRaceScreen extends StatelessWidget {
                     child: Text(
                       'Sebelum meluncur mengambil nafas terlebih dahulu menggunakan mulut.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -106,7 +106,7 @@ class SlidingRaceScreen extends StatelessWidget {
                   Text(
                     '4)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -117,7 +117,7 @@ class SlidingRaceScreen extends StatelessWidget {
                     child: Text(
                       'Setelah mengambil nafas menggunakan mulut dan mendengar aba-aba peluit dengan lakukan luncuran kedepan dengan diawali kaki kanan menendang tembok.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -130,7 +130,7 @@ class SlidingRaceScreen extends StatelessWidget {
                   Text(
                     '5)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -141,7 +141,7 @@ class SlidingRaceScreen extends StatelessWidget {
                     child: Text(
                       'Lakukan luncuran dengan menggerakkan kaki sejauh-jauhnya sekuat ketahanan nafas masing-masing pemain.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -154,7 +154,7 @@ class SlidingRaceScreen extends StatelessWidget {
                   Text(
                     '6)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -165,7 +165,7 @@ class SlidingRaceScreen extends StatelessWidget {
                     child: Text(
                       'Setelah berhenti berdiri kembali lakukan luncuran dan seterusnya sampai keseberang kolam.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -178,7 +178,7 @@ class SlidingRaceScreen extends StatelessWidget {
                   Text(
                     '7)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -189,7 +189,7 @@ class SlidingRaceScreen extends StatelessWidget {
                     child: Text(
                       'Pemain yang menang adalah pemain yang paling awal sampai diseberang kolam.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -202,7 +202,7 @@ class SlidingRaceScreen extends StatelessWidget {
               Text(
                 'Peraturan:',
                 style: MyTextTheme.style(
-                  TextType.body3,
+                  TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                   isBold: true,
                 ),
@@ -210,7 +210,7 @@ class SlidingRaceScreen extends StatelessWidget {
               Text(
                 'Ketika luncuran berhenti langsung berdiri dan lakukan luncuran kembali, tidak diperbolehkan melangkah bila melangkah terkena diskualifikasi.',
                 style: MyTextTheme.style(
-                  TextType.body3,
+                  TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                 ),
               ),

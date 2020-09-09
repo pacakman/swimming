@@ -53,6 +53,7 @@ class SwimmingEquipmentScreen extends StatelessWidget {
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
+                        Image.asset('assets/images/pelampung.jpg'),
                       ],
                     ),
                   )
@@ -95,6 +96,7 @@ class SwimmingEquipmentScreen extends StatelessWidget {
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
+                        Image.asset('assets/images/kacamata_renang.jpg'),
                       ],
                     ),
                   )
@@ -137,6 +139,7 @@ class SwimmingEquipmentScreen extends StatelessWidget {
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
+                        Image.asset('assets/images/kaki_katak.jpg'),
                       ],
                     ),
                   )
@@ -179,6 +182,7 @@ class SwimmingEquipmentScreen extends StatelessWidget {
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
+                        Image.asset('assets/images/topi_renang.jpg'),
                       ],
                     ),
                   )
@@ -221,6 +225,7 @@ class SwimmingEquipmentScreen extends StatelessWidget {
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
+                        Image.asset('assets/images/penutup_telinga.jpg'),
                       ],
                     ),
                   )
@@ -263,6 +268,7 @@ class SwimmingEquipmentScreen extends StatelessWidget {
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
+                        Image.asset('assets/images/penjepit_hidung.jpg'),
                       ],
                     ),
                   )
@@ -305,6 +311,7 @@ class SwimmingEquipmentScreen extends StatelessWidget {
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
+                        Image.asset('assets/images/baju_renang.jpg'),
                       ],
                     ),
                   )
@@ -347,6 +354,7 @@ class SwimmingEquipmentScreen extends StatelessWidget {
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
+                        Image.asset('assets/images/papan_jepit.jpg'),
                       ],
                     ),
                   )
@@ -389,6 +397,7 @@ class SwimmingEquipmentScreen extends StatelessWidget {
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
+                        Image.asset('assets/images/pelampung_batang.jpg'),
                       ],
                     ),
                   )

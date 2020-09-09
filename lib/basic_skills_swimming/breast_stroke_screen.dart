@@ -25,7 +25,7 @@ class BreastStrokeScreen extends StatelessWidget {
                   Text(
                     '1)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                       isBold: true,
                     ),
@@ -41,7 +41,7 @@ class BreastStrokeScreen extends StatelessWidget {
                         Text(
                           'Gerakan Kaki : (1) Kaki di lekuk (dengkul dibengkokkan/ ditekuk), (2) Kemudian tendangkan/luruskan kaki dengan posisi kedua kaki tebuka (kaki kiri dan kaki kanan agak bersentuhan, (3) Kaki masih dalam posisi diluruskan, kemudian kaki di rapatkan (sampai telapak kaki dengan posisi kedua kaki kiri dan kanan agak bersentuhan, ini akan menambah daya dorong. Langkah tersebut dapat diulangi. Jadi lakukan gerakan dada ini dengan urut.',
                           style: MyTextTheme.style(
-                            TextType.body3,
+                            TextType.body1,
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
@@ -59,7 +59,7 @@ class BreastStrokeScreen extends StatelessWidget {
                   Text(
                     '2)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                       isBold: true,
                     ),
@@ -75,7 +75,7 @@ class BreastStrokeScreen extends StatelessWidget {
                         Text(
                           'Gerakan Tangan : (1) Posisi awal, kedua tangan lurus di atas kepala (kedua telapak tangan saling bertemu dan menempel), (2) Kemudian tangan ditarik di samping tangan dan kiri, tetapi tidak perlu terlalu ke samping (cukup tarik ke samping selebar bahu dan selebihnya tarik ke bawah), (3) Luruskan tangan kembali, (4) Ulangi langkah tersebut.',
                           style: MyTextTheme.style(
-                            TextType.body3,
+                            TextType.body1,
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
@@ -93,7 +93,7 @@ class BreastStrokeScreen extends StatelessWidget {
                   Text(
                     '3)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                       isBold: true,
                     ),
@@ -109,7 +109,7 @@ class BreastStrokeScreen extends StatelessWidget {
                         Text(
                           'Gerakan Kombinasi Tangan, Kaki, dan Mengambil Nafas : (1) Gerakan tangan dan kaki di lakukan bergantian, (2) Pengambilan nafas di lakukan ketika gerakan tangan di samping sebelah kiri dan kanan, kemudian kepala mendongak ke atas, (3) Lalu diteruskan bersamaan dengan mengambil nafas.',
                           style: MyTextTheme.style(
-                            TextType.body3,
+                            TextType.body1,
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),

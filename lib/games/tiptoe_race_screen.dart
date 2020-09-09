@@ -23,7 +23,7 @@ class TipToeRaceScreen extends StatelessWidget {
               Text(
                 'Cara Bermain:',
                 style: MyTextTheme.style(
-                  TextType.body3,
+                  TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                   isBold: true,
                 ),
@@ -34,7 +34,7 @@ class TipToeRaceScreen extends StatelessWidget {
                   Text(
                     '1)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -45,7 +45,7 @@ class TipToeRaceScreen extends StatelessWidget {
                     child: Text(
                       'Pemain menyiapkan kacamata renang diseberang kolam.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -58,7 +58,7 @@ class TipToeRaceScreen extends StatelessWidget {
                   Text(
                     '2)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -69,7 +69,7 @@ class TipToeRaceScreen extends StatelessWidget {
                     child: Text(
                       'Seluruh pemain merapat ke tepi kolam yang telah dibagi dalam bebeapa kelompok, setiap kelompok berisi 5 orang atau bisa disesuaikan jumlahnya, membentuk posisi berurutan ke samping dan saling bergandengan.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -82,7 +82,7 @@ class TipToeRaceScreen extends StatelessWidget {
                   Text(
                     '3)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -93,7 +93,7 @@ class TipToeRaceScreen extends StatelessWidget {
                     child: Text(
                       'Setelah mendengar peluit sebagai aba-aba, siswa saling berlomba untuk sampai diseberang kolam dan tetap bergandengan.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -106,7 +106,7 @@ class TipToeRaceScreen extends StatelessWidget {
                   Text(
                     '4)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -117,7 +117,7 @@ class TipToeRaceScreen extends StatelessWidget {
                     child: Text(
                       'Setelah sampai diseberang kolam setiap pemain segera memakai kacamata renangnya masing-masing.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -130,7 +130,7 @@ class TipToeRaceScreen extends StatelessWidget {
                   Text(
                     '5)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -141,7 +141,7 @@ class TipToeRaceScreen extends StatelessWidget {
                     child: Text(
                       'Setelah memakai kacamata renang kembali bergandengan dan bergegas kembali ke tempat start.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -154,7 +154,7 @@ class TipToeRaceScreen extends StatelessWidget {
                   Text(
                     '6)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -165,7 +165,7 @@ class TipToeRaceScreen extends StatelessWidget {
                     child: Text(
                       'Kelompok yang lebih awal kembali ketempat start berhak meminta untuk digendong kepada kelompok lain yang lebih lambat mencapai tepi kolam seberang.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -178,7 +178,7 @@ class TipToeRaceScreen extends StatelessWidget {
               Text(
                 'Peraturan:',
                 style: MyTextTheme.style(
-                  TextType.body3,
+                  TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                   isBold: true,
                 ),
@@ -186,7 +186,7 @@ class TipToeRaceScreen extends StatelessWidget {
               Text(
                 'Pegangan tangan dengan yang berada disampingnya tidak boleh terlepas, bila sampai terlepas akan didiskualifikasi.',
                 style: MyTextTheme.style(
-                  TextType.body3,
+                  TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                 ),
               ),

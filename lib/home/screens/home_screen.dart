@@ -6,7 +6,7 @@ import 'package:swimming_exercise/games/games_screen.dart';
 import 'package:swimming_exercise/home/inherited/home_screen_inherited.dart';
 import 'package:swimming_exercise/home/widgets/home_row_widget.dart';
 import 'package:swimming_exercise/safety/screens/safety_screen.dart';
-import 'package:swimming_exercise/swimwear/sweam_wear_screen.dart';
+import 'package:swimming_exercise/swimwear/swim_wear_screen.dart';
 import 'package:swimming_exercise/utilities/components/my_app_bar.dart';
 import 'package:swimming_exercise/utilities/constants.dart';
 import 'package:swimming_exercise/utilities/helper/screen_config.dart';

@@ -87,7 +87,7 @@ class MyTextTheme {
         break;
       case TextType.body1:
         _fontSize = 18; // 18
-        _height = 1.333;
+        _height = 1.1;
         break;
       case TextType.body2:
         _fontSize = 16; // 16

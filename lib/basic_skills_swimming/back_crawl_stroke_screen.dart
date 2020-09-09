@@ -25,7 +25,7 @@ class BackCrawlStrokeScreen extends StatelessWidget {
                   Text(
                     '1)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                       isBold: true,
                     ),
@@ -41,7 +41,7 @@ class BackCrawlStrokeScreen extends StatelessWidget {
                         Text(
                           'Gerakan kaki: (1) Kaki kanan dan kiri digerakkan naik turun secara bergantian (seperti orang yang sedang berjalan), (2) Kaki digerakkan secara bergantian dengan cukup cepat agar arah renang tidak melenceng/berbelok.',
                           style: MyTextTheme.style(
-                            TextType.body3,
+                            TextType.body1,
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
@@ -59,7 +59,7 @@ class BackCrawlStrokeScreen extends StatelessWidget {
                   Text(
                     '2)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                       isBold: true,
                     ),
@@ -75,7 +75,7 @@ class BackCrawlStrokeScreen extends StatelessWidget {
                         Text(
                           'Gerakan tangan: (1) Posisi tangan awal satu tangan lurus ke atas kepala, (2) Kemudian langsung mengayuh ke belakang menuju pinggang, (3) Kemudian angkat keluar dari permukaan air dan kembalikan ke posisi awal, 4) Lakukan hal yang sama dengan tangan yang satunya, (5) Jadi tangan kanan dan kiri bergerak secara bergantian, ketika tangan kiri bergerak dalam air, tangan kanan masuk ke dalam air, begitu seterusnya.',
                           style: MyTextTheme.style(
-                            TextType.body3,
+                            TextType.body1,
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
@@ -93,7 +93,7 @@ class BackCrawlStrokeScreen extends StatelessWidget {
                   Text(
                     '3)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                       isBold: true,
                     ),
@@ -109,7 +109,7 @@ class BackCrawlStrokeScreen extends StatelessWidget {
                         Text(
                           'Gerakan kombinasi tangan, kaki, dan mengambil napas: Posisi kaki terus bergerak seperti: (1) Kaki kanan dan kiri digerakkan naik turun secara bergantian (seperti orang yang sedang berjalan), (2) Kaki digerakkan secara bergantian dengan cukup cepat agar arah renang tidak melenceng/ berbelok.',
                           style: MyTextTheme.style(
-                            TextType.body3,
+                            TextType.body1,
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),

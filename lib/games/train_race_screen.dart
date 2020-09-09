@@ -23,7 +23,7 @@ class TrainRaceScreen extends StatelessWidget {
               Text(
                 'Cara Bermain:',
                 style: MyTextTheme.style(
-                  TextType.body3,
+                  TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                   isBold: true,
                 ),
@@ -34,7 +34,7 @@ class TrainRaceScreen extends StatelessWidget {
                   Text(
                     '1)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -45,7 +45,7 @@ class TrainRaceScreen extends StatelessWidget {
                     child: Text(
                       'Pemain menyiapkan papan pelampung di seberang kolam.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -58,7 +58,7 @@ class TrainRaceScreen extends StatelessWidget {
                   Text(
                     '2)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -69,7 +69,7 @@ class TrainRaceScreen extends StatelessWidget {
                     child: Text(
                       'Seluruh pemain merapat ke tepi kolam yang telah dibagi dalam beberapa kelompok, setiap kelompok berisi 5 orang atau bisa disesuaikan jumlahnya, membentuk posisi berurutan dan memegang pundak.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -82,7 +82,7 @@ class TrainRaceScreen extends StatelessWidget {
                   Text(
                     '3)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -93,7 +93,7 @@ class TrainRaceScreen extends StatelessWidget {
                     child: Text(
                       'Setelah mendengar peluit sebagai aba-aba, para pemain berlomba untuk mengambil papan pelampung yang ada diseberang dengan cara berlari.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -106,7 +106,7 @@ class TrainRaceScreen extends StatelessWidget {
                   Text(
                     '4)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -117,7 +117,7 @@ class TrainRaceScreen extends StatelessWidget {
                     child: Text(
                       'Berlomba sampai seberang kolam untuk mengambil pelampung, pemain yang paling depan dalam setiap kelompok yang bertugas membawa pelampung yang diambil kembali ke tempat start.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -130,7 +130,7 @@ class TrainRaceScreen extends StatelessWidget {
                   Text(
                     '5)',
                     style: MyTextTheme.style(
-                      TextType.body3,
+                      TextType.body1,
                       ScreenConfig.textSizeMultiplier,
                     ),
                   ),
@@ -141,7 +141,7 @@ class TrainRaceScreen extends StatelessWidget {
                     child: Text(
                       'Kelompok yang lebih awal kembali ke tempat start berhak meminta untuk digendong kepada kelompok lain yang lebih lambat mencapai tepi kolam seberang.',
                       style: MyTextTheme.style(
-                        TextType.body3,
+                        TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
                     ),
@@ -154,7 +154,7 @@ class TrainRaceScreen extends StatelessWidget {
               Text(
                 'Peraturan:',
                 style: MyTextTheme.style(
-                  TextType.body3,
+                  TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                   isBold: true,
                 ),
@@ -162,7 +162,7 @@ class TrainRaceScreen extends StatelessWidget {
               Text(
                 'Pegangan tangan ke pundak teman yang berada didepannya tidak boleh terlepas, bila terlepas akan didiskualifikasi.',
                 style: MyTextTheme.style(
-                  TextType.body3,
+                  TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                 ),
               ),

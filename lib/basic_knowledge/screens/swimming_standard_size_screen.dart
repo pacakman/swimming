@@ -234,6 +234,9 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
+                        SizedBox(
+                          height: 5,
+                        ),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
