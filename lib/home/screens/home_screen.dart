@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
     return HomeScreenInheritedWidget(
       child: Scaffold(
         appBar: MyAppBar(
-          title: 'Teknis Dasar Berenang',
+          title: 'Teknis Dasar Renang',
         ),
         body: ListView.builder(
           itemCount: HOME_MENUS.length,

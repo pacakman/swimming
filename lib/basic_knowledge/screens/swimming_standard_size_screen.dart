@@ -192,6 +192,7 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                             ScreenConfig.textSizeMultiplier,
                           ),
                         ),
+                        Image.asset('assets/images/pool.png')
                       ],
                     ),
                   )
