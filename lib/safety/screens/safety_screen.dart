@@ -24,9 +24,10 @@ class SafetyScreen extends StatelessWidget {
                 Text(
                   'Dalam melakukan aktivitas di air ada beberapa hal yang harus dihindari antara lain:',
                   style: MyTextTheme.style(
-                    TextType.body2,
+                    TextType.body1,
                     ScreenConfig.textSizeMultiplier,
                   ),
+                  textAlign: TextAlign.justify,
                 ),
                 SizedBox(
                   height: 5,
@@ -44,7 +45,7 @@ class SafetyScreen extends StatelessWidget {
                           Text(
                             '${SWIMMING_SAFETY.length - (SWIMMING_SAFETY.length - (index + 1))}.',
                             style: MyTextTheme.style(
-                              TextType.body2,
+                              TextType.body1,
                               ScreenConfig.textSizeMultiplier,
                             ),
                           ),
@@ -55,9 +56,10 @@ class SafetyScreen extends StatelessWidget {
                             child: Text(
                               SWIMMING_SAFETY[index],
                               style: MyTextTheme.style(
-                                TextType.body2,
+                                TextType.body1,
                                 ScreenConfig.textSizeMultiplier,
                               ),
+                              textAlign: TextAlign.justify,
                             ),
                           )
                         ],

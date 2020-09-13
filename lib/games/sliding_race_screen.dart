@@ -28,6 +28,13 @@ class SlidingRaceScreen extends StatelessWidget {
                   isBold: true,
                 ),
               ),
+              SizedBox(
+                height: 5,
+              ),
+              Image.asset('assets/images/balap_meluncur.jpg'),
+              SizedBox(
+                height: 5,
+              ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -48,6 +55,7 @@ class SlidingRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -72,6 +80,7 @@ class SlidingRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -96,6 +105,7 @@ class SlidingRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -120,6 +130,7 @@ class SlidingRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -144,6 +155,7 @@ class SlidingRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -168,6 +180,7 @@ class SlidingRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -192,6 +205,7 @@ class SlidingRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -213,8 +227,8 @@ class SlidingRaceScreen extends StatelessWidget {
                   TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                 ),
+                textAlign: TextAlign.justify,
               ),
-              Image.asset('assets/images/balap_meluncur.jpg'),
             ],
           ),
         ),

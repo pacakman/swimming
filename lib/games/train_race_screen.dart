@@ -28,6 +28,13 @@ class TrainRaceScreen extends StatelessWidget {
                   isBold: true,
                 ),
               ),
+              SizedBox(
+                height: 5,
+              ),
+              Image.asset('assets/images/balap_kereta.jpg'),
+              SizedBox(
+                height: 5,
+              ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -48,9 +55,13 @@ class TrainRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
+              ),
+              SizedBox(
+                height: 5,
               ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,9 +83,13 @@ class TrainRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
+              ),
+              SizedBox(
+                height: 5,
               ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -96,9 +111,13 @@ class TrainRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
+              ),
+              SizedBox(
+                height: 5,
               ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -120,9 +139,13 @@ class TrainRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
+              ),
+              SizedBox(
+                height: 5,
               ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -144,6 +167,7 @@ class TrainRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -159,14 +183,20 @@ class TrainRaceScreen extends StatelessWidget {
                   isBold: true,
                 ),
               ),
+              SizedBox(
+                height: 5,
+              ),
               Text(
                 'Pegangan tangan ke pundak teman yang berada didepannya tidak boleh terlepas, bila terlepas akan didiskualifikasi.',
                 style: MyTextTheme.style(
                   TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                 ),
+                textAlign: TextAlign.justify,
               ),
-              Image.asset('assets/images/balap_kereta.jpg'),
+              SizedBox(
+                height: 5,
+              ),
             ],
           ),
         ),

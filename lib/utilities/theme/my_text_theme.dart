@@ -59,7 +59,7 @@ class MyTextTheme {
         break;
       case TextType.heading4:
         _fontSize = 18; // 18
-        _height = 1.111;
+        _height = 1;
         break;
       case TextType.button0:
         _fontSize = 16; // 16
@@ -87,7 +87,7 @@ class MyTextTheme {
         break;
       case TextType.body1:
         _fontSize = 18; // 18
-        _height = 1.1;
+        _height = 1.5;
         break;
       case TextType.body2:
         _fontSize = 16; // 16
@@ -111,7 +111,7 @@ class MyTextTheme {
         break;
       default:
         _fontSize = 18; // 18
-        _height = 1.333;
+        _height = 1;
         break;
     }
     return TextStyle(

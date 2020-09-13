@@ -20,6 +20,7 @@ class SwimWearScreen extends StatelessWidget {
               TextType.body1,
               ScreenConfig.textSizeMultiplier,
             ),
+            textAlign: TextAlign.justify,
           ),
         ),
       ),

@@ -26,6 +26,7 @@ class SwimmingHistoryScreen extends StatelessWidget {
                   TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                 ),
+                textAlign: TextAlign.justify,
               ),
               SizedBox(
                 height: 5,
@@ -36,6 +37,7 @@ class SwimmingHistoryScreen extends StatelessWidget {
                   TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                 ),
+                textAlign: TextAlign.justify,
               ),
               SizedBox(
                 height: 5,
@@ -46,6 +48,7 @@ class SwimmingHistoryScreen extends StatelessWidget {
                   TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                 ),
+                textAlign: TextAlign.justify,
               ),
               SizedBox(
                 height: 5,
@@ -56,6 +59,7 @@ class SwimmingHistoryScreen extends StatelessWidget {
                   TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                 ),
+                textAlign: TextAlign.justify,
               )
             ],
           ),

@@ -28,6 +28,13 @@ class MoveRaceScreen extends StatelessWidget {
                   isBold: true,
                 ),
               ),
+              SizedBox(
+                height: 5,
+              ),
+              Image.asset('assets/images/balap_memindah_batang_kayu.jpg'),
+              SizedBox(
+                height: 5,
+              ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -48,6 +55,7 @@ class MoveRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -72,6 +80,7 @@ class MoveRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -96,6 +105,7 @@ class MoveRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -120,6 +130,7 @@ class MoveRaceScreen extends StatelessWidget {
                         TextType.body1,
                         ScreenConfig.textSizeMultiplier,
                       ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -141,8 +152,8 @@ class MoveRaceScreen extends StatelessWidget {
                   TextType.body1,
                   ScreenConfig.textSizeMultiplier,
                 ),
+                textAlign: TextAlign.justify,
               ),
-              Image.asset('assets/images/balap_memindah_batang_kayu.jpg'),
             ],
           ),
         ),

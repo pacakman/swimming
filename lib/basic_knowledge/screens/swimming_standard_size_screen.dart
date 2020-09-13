@@ -47,12 +47,20 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                             isBold: true,
                           ),
                         ),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Image.asset('assets/images/pool.png'),
+                        SizedBox(
+                          height: 5,
+                        ),
                         Text(
                           'Kolam renang standar nasional adalah kolam renang yang hanya disesuaikan standarnya untuk Indonesia saja. Berikut dibawah ini luas kolam renang standar nasional.',
                           style: MyTextTheme.style(
                             TextType.body1,
                             ScreenConfig.textSizeMultiplier,
                           ),
+                          textAlign: TextAlign.justify,
                         ),
                         SizedBox(
                           height: 5,
@@ -63,7 +71,7 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                             Container(
                               width: 10.0,
                               height: 10.0,
-                              decoration: new BoxDecoration(
+                              decoration: BoxDecoration(
                                 color: Colors.black,
                                 shape: BoxShape.circle,
                               ),
@@ -75,12 +83,15 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                               child: Text(
                                 'Panjang kolam 50 meter',
                                 style: MyTextTheme.style(
-                                  TextType.body1,
+                                  TextType.heading4,
                                   ScreenConfig.textSizeMultiplier,
                                 ),
                               ),
                             )
                           ],
+                        ),
+                        SizedBox(
+                          height: 5,
                         ),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -100,12 +111,15 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                               child: Text(
                                 'Lebar kolam renang 25 meter',
                                 style: MyTextTheme.style(
-                                  TextType.body1,
+                                  TextType.heading4,
                                   ScreenConfig.textSizeMultiplier,
                                 ),
                               ),
                             )
                           ],
+                        ),
+                        SizedBox(
+                          height: 5,
                         ),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -125,12 +139,15 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                               child: Text(
                                 'Kedalaman kolam Renang minimal 2 meter',
                                 style: MyTextTheme.style(
-                                  TextType.body1,
+                                  TextType.heading4,
                                   ScreenConfig.textSizeMultiplier,
                                 ),
                               ),
                             ),
                           ],
+                        ),
+                        SizedBox(
+                          height: 5,
                         ),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -150,12 +167,15 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                               child: Text(
                                 'Jumlah Lintasan Kolam Renang 8 jalur',
                                 style: MyTextTheme.style(
-                                  TextType.body1,
+                                  TextType.heading4,
                                   ScreenConfig.textSizeMultiplier,
                                 ),
                               ),
                             ),
                           ],
+                        ),
+                        SizedBox(
+                          height: 5,
                         ),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -175,7 +195,7 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                               child: Text(
                                 'Temperatur Air pada kolam renang 25° C – 28° C',
                                 style: MyTextTheme.style(
-                                  TextType.body1,
+                                  TextType.heading4,
                                   ScreenConfig.textSizeMultiplier,
                                 ),
                               ),
@@ -191,15 +211,15 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                             TextType.body1,
                             ScreenConfig.textSizeMultiplier,
                           ),
+                          textAlign: TextAlign.justify,
                         ),
-                        Image.asset('assets/images/pool.png')
                       ],
                     ),
                   )
                 ],
               ),
               SizedBox(
-                height: 5,
+                height: 20,
               ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -234,6 +254,7 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                             TextType.body1,
                             ScreenConfig.textSizeMultiplier,
                           ),
+                          textAlign: TextAlign.justify,
                         ),
                         SizedBox(
                           height: 5,
@@ -256,12 +277,15 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                               child: Text(
                                 'Panjang kolam Renang 50 meter',
                                 style: MyTextTheme.style(
-                                  TextType.body1,
+                                  TextType.heading4,
                                   ScreenConfig.textSizeMultiplier,
                                 ),
                               ),
                             )
                           ],
+                        ),
+                        SizedBox(
+                          height: 5,
                         ),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -281,12 +305,15 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                               child: Text(
                                 'Lebar kolam Renang 25 meter',
                                 style: MyTextTheme.style(
-                                  TextType.body1,
+                                  TextType.heading4,
                                   ScreenConfig.textSizeMultiplier,
                                 ),
                               ),
                             )
                           ],
+                        ),
+                        SizedBox(
+                          height: 5,
                         ),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -306,12 +333,15 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                               child: Text(
                                 'Jumlah Lintasan Kolam Renang 8 jalur',
                                 style: MyTextTheme.style(
-                                  TextType.body1,
+                                  TextType.heading4,
                                   ScreenConfig.textSizeMultiplier,
                                 ),
                               ),
                             )
                           ],
+                        ),
+                        SizedBox(
+                          height: 5,
                         ),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -331,12 +361,15 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                               child: Text(
                                 'Lebar lintasan kolam renang 2,5 meter',
                                 style: MyTextTheme.style(
-                                  TextType.body1,
+                                  TextType.heading4,
                                   ScreenConfig.textSizeMultiplier,
                                 ),
                               ),
                             )
                           ],
+                        ),
+                        SizedBox(
+                          height: 5,
                         ),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -356,7 +389,7 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                               child: Text(
                                 'Temperatur Air pada kolam renang 25° C – 28° C',
                                 style: MyTextTheme.style(
-                                  TextType.body1,
+                                  TextType.heading4,
                                   ScreenConfig.textSizeMultiplier,
                                 ),
                               ),
@@ -372,6 +405,7 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                             TextType.body1,
                             ScreenConfig.textSizeMultiplier,
                           ),
+                          textAlign: TextAlign.justify,
                         ),
                       ],
                     ),
