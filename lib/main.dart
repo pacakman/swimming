@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:swimming_exercise/home/screens/home_screen.dart';
+import 'package:swimming_exercise/splash_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }

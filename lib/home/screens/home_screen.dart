@@ -7,6 +7,7 @@ import 'package:swimming_exercise/home/inherited/home_screen_inherited.dart';
 import 'package:swimming_exercise/home/widgets/home_row_widget.dart';
 import 'package:swimming_exercise/safety/screens/safety_screen.dart';
 import 'package:swimming_exercise/swimwear/swim_wear_screen.dart';
+import 'package:swimming_exercise/utilities/components/builder_drawer.dart';
 import 'package:swimming_exercise/utilities/components/my_app_bar.dart';
 import 'package:swimming_exercise/utilities/constants.dart';
 import 'package:swimming_exercise/utilities/helper/screen_config.dart';
@@ -22,6 +23,7 @@ class HomeScreen extends StatelessWidget {
         appBar: MyAppBar(
           title: 'Teknis Dasar Renang',
         ),
+        drawer: BuilderDrawer(),
         body: ListView.builder(
           itemCount: HOME_MENUS.length,
           itemBuilder: (BuildContext context, int index) {
@@ -40,22 +42,19 @@ class HomeScreen extends StatelessWidget {
                       builder: (context) => BasicKnowledgeScreen(),
                     ),
                   );
-                }
-                else if (index == 2) {
+                } else if (index == 2) {
                   Navigator.of(context).push(
                     CupertinoPageRoute(
                       builder: (context) => SwimWearScreen(),
                     ),
                   );
-                }
-                else if (index == 3) {
+                } else if (index == 3) {
                   Navigator.of(context).push(
                     CupertinoPageRoute(
                       builder: (context) => BasicSkillsSwimmingScreen(),
                     ),
                   );
-                }
-                else if (index == 4) {
+                } else if (index == 4) {
                   Navigator.of(context).push(
                     CupertinoPageRoute(
                       builder: (context) => GamesScreen(),
