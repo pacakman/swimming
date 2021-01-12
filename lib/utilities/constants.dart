@@ -20,6 +20,7 @@ const List<String> BASIC_KNOWLEDGE_MENUS = [
   'Perlengkapan Renang',
   'Macam-macam Gaya Renang',
   'Standar Ukuran Kolam Renang',
+  'Dasar Perilaku Dalam Berenang'
 ];
 
 const List<String> BASIC_SKILLS = [

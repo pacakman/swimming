@@ -11,103 +11,130 @@ class KindsOfSwimmingScreen extends StatelessWidget {
       appBar: MyAppBar(
         title: 'Macam-maca Gaya Renang',
       ),
-      body: Container(
-        margin: EdgeInsets.symmetric(
-          horizontal: 16,
-          vertical: 10,
-        ),
-        child: Column(
-          children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  '-',
-                  style: MyTextTheme.style(
-                    TextType.body1,
-                    ScreenConfig.textSizeMultiplier,
-                    isBold: true,
+      body: SingleChildScrollView(
+        child: Container(
+          margin: EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 10,
+          ),
+          child: Column(
+            children: <Widget>[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    '-',
+                    style: MyTextTheme.style(
+                      TextType.body1,
+                      ScreenConfig.textSizeMultiplier,
+                      isBold: true,
+                    ),
                   ),
-                ),
-                SizedBox(
-                  width: 5,
-                ),
-                Text(
-                  'Gaya Dada (Chest Stroke)',
-                  style: MyTextTheme.style(
-                    TextType.body1,
-                    ScreenConfig.textSizeMultiplier,
+                  SizedBox(
+                    width: 5,
                   ),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  '-',
-                  style: MyTextTheme.style(
-                    TextType.body1,
-                    ScreenConfig.textSizeMultiplier,
+                  Text(
+                    'Gaya Dada (Chest Stroke)',
+                    style: MyTextTheme.style(
+                      TextType.body1,
+                      ScreenConfig.textSizeMultiplier,
+                    ),
                   ),
-                ),
-                SizedBox(
-                  width: 5,
-                ),
-                Text(
-                  'Gaya Kupu-Kupu (Butterfly Stroke)',
-                  style: MyTextTheme.style(
-                    TextType.body1,
-                    ScreenConfig.textSizeMultiplier,
+                ],
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Image.asset('assets/images/gaya_bebas.png'),
+              SizedBox(
+                height: 32,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    '-',
+                    style: MyTextTheme.style(
+                      TextType.body1,
+                      ScreenConfig.textSizeMultiplier,
+                    ),
                   ),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  '-',
-                  style: MyTextTheme.style(
-                    TextType.body1,
-                    ScreenConfig.textSizeMultiplier,
+                  SizedBox(
+                    width: 5,
                   ),
-                ),
-                SizedBox(
-                  width: 5,
-                ),
-                Text(
-                  'Gaya Punggung (Back Crawl Stroke)',
-                  style: MyTextTheme.style(
-                    TextType.body1,
-                    ScreenConfig.textSizeMultiplier,
+                  Text(
+                    'Gaya Kupu-Kupu (Butterfly Stroke)',
+                    style: MyTextTheme.style(
+                      TextType.body1,
+                      ScreenConfig.textSizeMultiplier,
+                    ),
                   ),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  '-',
-                  style: MyTextTheme.style(
-                    TextType.body1,
-                    ScreenConfig.textSizeMultiplier,
+                ],
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Image.asset('assets/images/kupu2.png'),
+              SizedBox(
+                height: 32,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    '-',
+                    style: MyTextTheme.style(
+                      TextType.body1,
+                      ScreenConfig.textSizeMultiplier,
+                    ),
                   ),
-                ),
-                SizedBox(
-                  width: 5,
-                ),
-                Text(
-                  'Gaya Bebas (Crawl Stroke)',
-                  style: MyTextTheme.style(
-                    TextType.body1,
-                    ScreenConfig.textSizeMultiplier,
+                  SizedBox(
+                    width: 5,
                   ),
-                ),
-              ],
-            )
-          ],
+                  Text(
+                    'Gaya Punggung (Back Crawl Stroke)',
+                    style: MyTextTheme.style(
+                      TextType.body1,
+                      ScreenConfig.textSizeMultiplier,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Image.asset('assets/images/punggung.png'),
+              SizedBox(
+                height: 32,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    '-',
+                    style: MyTextTheme.style(
+                      TextType.body1,
+                      ScreenConfig.textSizeMultiplier,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    'Gaya Bebas (Crawl Stroke)',
+                    style: MyTextTheme.style(
+                      TextType.body1,
+                      ScreenConfig.textSizeMultiplier,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Image.asset('assets/images/dada.png'),
+            ],
+          ),
         ),
       ),
     );

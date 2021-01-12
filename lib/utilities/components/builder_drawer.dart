@@ -82,7 +82,9 @@ class _BuilderDrawerState extends State<BuilderDrawer> {
                   textAlign: TextAlign.justify,
                 ),
                 selectedTileColor: Colors.blue,
+                trailing: Icon(Icons.arrow_forward_ios),
               ),
+              Divider(thickness: 1,),
               ListTile(
                 onTap: () {
                   Navigator.of(context).push(
@@ -100,6 +102,7 @@ class _BuilderDrawerState extends State<BuilderDrawer> {
                   textAlign: TextAlign.justify,
                 ),
                 selectedTileColor: Colors.blue,
+                trailing: Icon(Icons.arrow_forward_ios),
               )
             ],
           ),

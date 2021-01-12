@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:swimming_exercise/basic_knowledge/inherited/basic_knowledge_screen_inherited.dart';
 import 'package:swimming_exercise/basic_knowledge/screens/kinds_of_swimming_screen.dart';
+import 'package:swimming_exercise/basic_knowledge/screens/swimming_basic_behaviour.dart';
 import 'package:swimming_exercise/basic_knowledge/screens/swimming_equipment_screen.dart';
 import 'package:swimming_exercise/basic_knowledge/screens/swimming_history_screen.dart';
 import 'package:swimming_exercise/basic_knowledge/screens/swimming_standard_size_screen.dart';
@@ -35,18 +36,22 @@ class BasicKnowledgeScreen extends StatelessWidget {
                       builder: (context) => SwimmingEquipmentScreen(),
                     ),
                   );
-                }
-                else if (index == 2) {
+                } else if (index == 2) {
                   Navigator.of(context).push(
                     CupertinoPageRoute(
                       builder: (context) => KindsOfSwimmingScreen(),
                     ),
                   );
-                }
-                else if (index == 3) {
+                } else if (index == 3) {
                   Navigator.of(context).push(
                     CupertinoPageRoute(
                       builder: (context) => SwimmingStandardSizeScreen(),
+                    ),
+                  );
+                } else if (index == 4) {
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => SwimmingBasicBehaviourScreen(),
                     ),
                   );
                 }

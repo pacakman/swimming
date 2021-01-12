@@ -20,6 +20,7 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
           ),
           child: Column(
             children: <Widget>[
+              Image.asset('assets/images/standar_kolam.png'),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[

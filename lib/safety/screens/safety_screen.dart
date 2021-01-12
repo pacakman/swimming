@@ -21,6 +21,7 @@ class SafetyScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
+                Image.asset('assets/images/keselamatan_di_kolam.png'),
                 Text(
                   'Dalam melakukan aktivitas di air ada beberapa hal yang harus dihindari antara lain:',
                   style: MyTextTheme.style(
