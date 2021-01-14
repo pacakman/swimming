@@ -1,9 +1,9 @@
 const List<String> HOME_MENUS = [
   'Keselamatan Di Kolam Renang',
   'Dasar Pengetahuan Renang',
-  'Aturan Pakaian Renang',
-  'Dasar Keterampilan Renang',
-  'Permainan Renang',
+  'Dasar Perilaku Dalam Berenang',
+  'Dasar Keterampilan Berenang',
+  'Permainan Di Air',
 ];
 
 const List<String> SWIMMING_SAFETY = [
@@ -20,14 +20,17 @@ const List<String> BASIC_KNOWLEDGE_MENUS = [
   'Perlengkapan Renang',
   'Macam-macam Gaya Renang',
   'Standar Ukuran Kolam Renang',
-  'Dasar Perilaku Dalam Berenang'
 ];
 
 const List<String> BASIC_SKILLS = [
-  'Gaya Dada',
-  'Gaya Kupu-Kupu',
-  'Gaya Punggung',
+  'Masuk Ke Air',
+  'Mengapung',
+  'Meluncur',
   'Gaya Bebas',
+  'Gaya Dada',
+  'Gaya Punggung',
+  'Gaya Kupu-Kupu',
+  'Gaya Ganti'
 ];
 
 const List<String> GAMES = [

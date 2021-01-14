@@ -3,7 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:swimming_exercise/basic_skills_swimming/back_crawl_stroke_screen.dart';
 import 'package:swimming_exercise/basic_skills_swimming/breast_stroke_screen.dart';
 import 'package:swimming_exercise/basic_skills_swimming/butterfly_stroke_screen.dart';
+import 'package:swimming_exercise/basic_skills_swimming/change_style_screen.dart';
 import 'package:swimming_exercise/basic_skills_swimming/crawl_stroke_screen.dart';
+import 'package:swimming_exercise/basic_skills_swimming/floating_screen.dart';
+import 'package:swimming_exercise/basic_skills_swimming/jump_to_water_screen.dart';
+import 'package:swimming_exercise/basic_skills_swimming/slide_screen.dart';
 import 'package:swimming_exercise/home/widgets/home_row_widget.dart';
 import 'package:swimming_exercise/utilities/components/my_app_bar.dart';
 import 'package:swimming_exercise/utilities/constants.dart';
@@ -24,21 +28,21 @@ class BasicSkillsSwimmingScreen extends StatelessWidget {
               if (index == 0) {
                 Navigator.of(context).push(
                   CupertinoPageRoute(
-                    builder: (context) => BreastStrokeScreen(),
+                    builder: (context) => JumpToWaterScreen(),
                   ),
                 );
               }
               else if (index == 1) {
                 Navigator.of(context).push(
                   CupertinoPageRoute(
-                    builder: (context) => ButterflyStrokeScreen(),
+                    builder: (context) => FloatingScreen(),
                   ),
                 );
               }
               else if (index == 2) {
                 Navigator.of(context).push(
                   CupertinoPageRoute(
-                    builder: (context) => BackCrawlStrokeScreen(),
+                    builder: (context) => SlideScreen(),
                   ),
                 );
               }
@@ -46,6 +50,35 @@ class BasicSkillsSwimmingScreen extends StatelessWidget {
                 Navigator.of(context).push(
                   CupertinoPageRoute(
                     builder: (context) => CrawlStrokeScreen(),
+                  ),
+                );
+              }
+
+              else if (index == 4) {
+                Navigator.of(context).push(
+                  CupertinoPageRoute(
+                    builder: (context) => BreastStrokeScreen(),
+                  ),
+                );
+              }
+              else if (index == 5) {
+                Navigator.of(context).push(
+                  CupertinoPageRoute(
+                    builder: (context) => BackCrawlStrokeScreen(),
+                  ),
+                );
+              }
+              else if (index == 6) {
+                Navigator.of(context).push(
+                  CupertinoPageRoute(
+                    builder: (context) => ButterflyStrokeScreen(),
+                  ),
+                );
+              }
+              else if (index == 7) {
+                Navigator.of(context).push(
+                  CupertinoPageRoute(
+                    builder: (context) => ChangeStyleScreen(),
                   ),
                 );
               }

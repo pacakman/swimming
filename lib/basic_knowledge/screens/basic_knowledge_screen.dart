@@ -48,12 +48,6 @@ class BasicKnowledgeScreen extends StatelessWidget {
                       builder: (context) => SwimmingStandardSizeScreen(),
                     ),
                   );
-                } else if (index == 4) {
-                  Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (context) => SwimmingBasicBehaviourScreen(),
-                    ),
-                  );
                 }
               },
             );

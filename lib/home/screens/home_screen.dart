@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:swimming_exercise/basic_knowledge/screens/basic_knowledge_screen.dart';
+import 'package:swimming_exercise/basic_knowledge/screens/swimming_basic_behaviour.dart';
 import 'package:swimming_exercise/basic_skills_swimming/basic_skills_swimming.dart';
 import 'package:swimming_exercise/games/games_screen.dart';
 import 'package:swimming_exercise/home/inherited/home_screen_inherited.dart';
@@ -24,46 +25,59 @@ class HomeScreen extends StatelessWidget {
           title: 'Teknis Dasar Renang',
         ),
         drawer: BuilderDrawer(),
-        body: ListView.builder(
-          itemCount: HOME_MENUS.length,
-          itemBuilder: (BuildContext context, int index) {
-            return HomeRowWidget(
-              title: HOME_MENUS[index],
-              onTap: () {
-                if (index == 0) {
-                  Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (context) => SafetyScreen(),
-                    ),
-                  );
-                } else if (index == 1) {
-                  Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (context) => BasicKnowledgeScreen(),
-                    ),
-                  );
-                } else if (index == 2) {
-                  Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (context) => SwimWearScreen(),
-                    ),
-                  );
-                } else if (index == 3) {
-                  Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (context) => BasicSkillsSwimmingScreen(),
-                    ),
-                  );
-                } else if (index == 4) {
-                  Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (context) => GamesScreen(),
-                    ),
-                  );
-                }
-              },
-            );
-          },
+        body: SingleChildScrollView(
+          child: Container(
+            height: ScreenConfig.screenHeight,
+            child: Column(
+              children: [
+                Image.asset('assets/images/beranda.png'),
+                Expanded(
+                  child: ListView.builder(
+                    itemCount: HOME_MENUS.length,
+                    physics: NeverScrollableScrollPhysics(),
+                    itemBuilder: (BuildContext context, int index) {
+                      return HomeRowWidget(
+                        title: HOME_MENUS[index],
+                        onTap: () {
+                          if (index == 0) {
+                            Navigator.of(context).push(
+                              CupertinoPageRoute(
+                                builder: (context) => SafetyScreen(),
+                              ),
+                            );
+                          } else if (index == 1) {
+                            Navigator.of(context).push(
+                              CupertinoPageRoute(
+                                builder: (context) => BasicKnowledgeScreen(),
+                              ),
+                            );
+                          } else if (index == 2) {
+                            Navigator.of(context).push(
+                              CupertinoPageRoute(
+                                builder: (context) => SwimmingBasicBehaviourScreen(),
+                              ),
+                            );
+                          } else if (index == 3) {
+                            Navigator.of(context).push(
+                              CupertinoPageRoute(
+                                builder: (context) => BasicSkillsSwimmingScreen(),
+                              ),
+                            );
+                          } else if (index == 4) {
+                            Navigator.of(context).push(
+                              CupertinoPageRoute(
+                                builder: (context) => GamesScreen(),
+                              ),
+                            );
+                          }
+                        },
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );

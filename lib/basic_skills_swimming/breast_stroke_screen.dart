@@ -19,6 +19,10 @@ class BreastStrokeScreen extends StatelessWidget {
           ),
           child: Column(
             children: <Widget>[
+              Image.asset('assets/images/dada.png'),
+              SizedBox(
+                height: 5,
+              ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[

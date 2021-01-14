@@ -19,6 +19,10 @@ class BackCrawlStrokeScreen extends StatelessWidget {
           ),
           child: Column(
             children: <Widget>[
+              Image.asset('assets/images/punggung.png'),
+              SizedBox(
+                height: 5,
+              ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[

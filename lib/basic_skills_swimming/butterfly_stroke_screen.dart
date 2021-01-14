@@ -19,6 +19,10 @@ class ButterflyStrokeScreen extends StatelessWidget {
           ),
           child: Column(
             children: <Widget>[
+              Image.asset('assets/images/kupu2.png'),
+              SizedBox(
+                height: 5,
+              ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[

@@ -19,6 +19,10 @@ class CrawlStrokeScreen extends StatelessWidget {
           ),
           child: Column(
             children: <Widget>[
+              Image.asset('assets/images/gaya_bebas.png'),
+              SizedBox(
+                height: 5,
+              ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
