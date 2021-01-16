@@ -25,59 +25,53 @@ class HomeScreen extends StatelessWidget {
           title: 'Teknik Dasar Renang',
         ),
         drawer: BuilderDrawer(),
-        body: SingleChildScrollView(
-          child: Container(
-            height: ScreenConfig.screenHeight,
-            child: Column(
-              children: [
-                Image.asset('assets/images/beranda.png'),
-                Expanded(
-                  child: ListView.builder(
-                    itemCount: HOME_MENUS.length,
-                    physics: NeverScrollableScrollPhysics(),
-                    itemBuilder: (BuildContext context, int index) {
-                      return HomeRowWidget(
-                        title: HOME_MENUS[index],
-                        onTap: () {
-                          if (index == 0) {
-                            Navigator.of(context).push(
-                              CupertinoPageRoute(
-                                builder: (context) => SafetyScreen(),
-                              ),
-                            );
-                          } else if (index == 1) {
-                            Navigator.of(context).push(
-                              CupertinoPageRoute(
-                                builder: (context) => BasicKnowledgeScreen(),
-                              ),
-                            );
-                          } else if (index == 2) {
-                            Navigator.of(context).push(
-                              CupertinoPageRoute(
-                                builder: (context) => SwimmingBasicBehaviourScreen(),
-                              ),
-                            );
-                          } else if (index == 3) {
-                            Navigator.of(context).push(
-                              CupertinoPageRoute(
-                                builder: (context) => BasicSkillsSwimmingScreen(),
-                              ),
-                            );
-                          } else if (index == 4) {
-                            Navigator.of(context).push(
-                              CupertinoPageRoute(
-                                builder: (context) => GamesScreen(),
-                              ),
-                            );
-                          }
-                        },
+        body: ListView(
+          children: [
+            Image.asset('assets/images/beranda.png', height: 250, width: double.infinity, fit: BoxFit.cover,),
+            ListView.builder(
+              shrinkWrap: true,
+              itemCount: HOME_MENUS.length,
+              physics: NeverScrollableScrollPhysics(),
+              itemBuilder: (BuildContext context, int index) {
+                return HomeRowWidget(
+                  title: HOME_MENUS[index],
+                  onTap: () {
+                    if (index == 0) {
+                      Navigator.of(context).push(
+                        CupertinoPageRoute(
+                          builder: (context) => SafetyScreen(),
+                        ),
                       );
-                    },
-                  ),
-                ),
-              ],
+                    } else if (index == 1) {
+                      Navigator.of(context).push(
+                        CupertinoPageRoute(
+                          builder: (context) => BasicKnowledgeScreen(),
+                        ),
+                      );
+                    } else if (index == 2) {
+                      Navigator.of(context).push(
+                        CupertinoPageRoute(
+                          builder: (context) => SwimmingBasicBehaviourScreen(),
+                        ),
+                      );
+                    } else if (index == 3) {
+                      Navigator.of(context).push(
+                        CupertinoPageRoute(
+                          builder: (context) => BasicSkillsSwimmingScreen(),
+                        ),
+                      );
+                    } else if (index == 4) {
+                      Navigator.of(context).push(
+                        CupertinoPageRoute(
+                          builder: (context) => GamesScreen(),
+                        ),
+                      );
+                    }
+                  },
+                );
+              },
             ),
-          ),
+          ],
         ),
       ),
     );
