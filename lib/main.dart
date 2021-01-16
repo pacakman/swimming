@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:swimming_exercise/home/screens/home_screen.dart';
+import 'package:flutter/services.dart';
 import 'package:swimming_exercise/splash_screen.dart';
 
-void main() {
+void main()  async {
   runApp(MyApp());
 }
 
