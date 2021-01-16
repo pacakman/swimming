@@ -9,7 +9,7 @@ class MoveRaceScreen extends StatelessWidget {
     ScreenConfig().init(context);
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Balap Memindah Batang Kayu',
+        title: '5. Permainan Di Air',
       ),
       body: SingleChildScrollView(
         child: Container(

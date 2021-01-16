@@ -9,7 +9,7 @@ class ButterflyStrokeScreen extends StatelessWidget {
     ScreenConfig().init(context);
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Gaya Kupu-kupu',
+        title: '4. Dasar Keterampilan Renang',
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -19,7 +19,7 @@ class ButterflyStrokeScreen extends StatelessWidget {
           ),
           child: Column(
             children: <Widget>[
-              Image.asset('assets/images/kupu2.png'),
+              Image.asset('assets/images/gaya_kupu_1.png'),
               SizedBox(
                 height: 5,
               ),

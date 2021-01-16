@@ -9,7 +9,7 @@ class ZigZagRaceScreen extends StatelessWidget {
     ScreenConfig().init(context);
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Kereta Zig-Zag',
+        title: '5. Permainan Di Air',
       ),
       body: SingleChildScrollView(
         child: Container(

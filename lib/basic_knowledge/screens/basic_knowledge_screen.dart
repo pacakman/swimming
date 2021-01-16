@@ -16,7 +16,7 @@ class BasicKnowledgeScreen extends StatelessWidget {
     return BasicKnowledgeScreenInheritedWidget(
       child: Scaffold(
         appBar: MyAppBar(
-          title: 'Dasar Pengetahuan Renang',
+          title: '2. Dasar Pengetahuan Renang',
         ),
         body: ListView.builder(
           itemCount: BASIC_KNOWLEDGE_MENUS.length,

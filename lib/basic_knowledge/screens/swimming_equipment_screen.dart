@@ -9,7 +9,7 @@ class SwimmingEquipmentScreen extends StatelessWidget {
     ScreenConfig().init(context);
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Perlengkapan Renang',
+        title: '2. Dasar Pengetahuan Renang',
       ),
       body: SingleChildScrollView(
         child: Container(

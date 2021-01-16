@@ -10,7 +10,7 @@ class ChangeStyleScreen extends StatelessWidget {
     ScreenConfig().init(context);
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Gaya Ganti',
+        title: '4. Dasar Keterampilan Renang',
       ),
       body: SingleChildScrollView(
         child: Container(

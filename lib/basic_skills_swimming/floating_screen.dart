@@ -10,7 +10,7 @@ class FloatingScreen extends StatelessWidget {
     ScreenConfig().init(context);
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Mengapung',
+        title: '4. Dasar Keterampilan Renang',
       ),
       body: SingleChildScrollView(
         child: Container(

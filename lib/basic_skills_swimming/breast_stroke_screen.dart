@@ -9,7 +9,7 @@ class BreastStrokeScreen extends StatelessWidget {
     ScreenConfig().init(context);
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Gaya Dada',
+        title: '4. Dasar Keterampilan Renang',
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -19,7 +19,7 @@ class BreastStrokeScreen extends StatelessWidget {
           ),
           child: Column(
             children: <Widget>[
-              Image.asset('assets/images/dada.png'),
+              Image.asset('assets/images/gaya_dada_1.png'),
               SizedBox(
                 height: 5,
               ),

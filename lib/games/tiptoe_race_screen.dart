@@ -9,7 +9,7 @@ class TipToeRaceScreen extends StatelessWidget {
     ScreenConfig().init(context);
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Jalan Jinjit',
+        title: '5. Permainan Di Air',
       ),
       body: SingleChildScrollView(
         child: Container(

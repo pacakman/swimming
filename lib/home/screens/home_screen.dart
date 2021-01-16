@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
     return HomeScreenInheritedWidget(
       child: Scaffold(
         appBar: MyAppBar(
-          title: 'Teknis Dasar Renang',
+          title: 'Teknik Dasar Renang',
         ),
         drawer: BuilderDrawer(),
         body: SingleChildScrollView(

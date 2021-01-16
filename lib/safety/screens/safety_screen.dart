@@ -12,64 +12,52 @@ class SafetyScreen extends StatelessWidget {
     return SafetyScreenInheritedWidget(
       child: Scaffold(
         appBar: MyAppBar(
-          title: 'Keselamatan di Kolam Renang',
+          title: '1. Keselamatan di Kolam Renang',
         ),
-        body: SingleChildScrollView(
-          child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-            height: ScreenConfig.screenHeight,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Image.asset('assets/images/keselamatan_di_kolam.png'),
-                Text(
-                  'Dalam melakukan aktivitas di air ada beberapa hal yang harus dihindari antara lain:',
-                  style: MyTextTheme.style(
-                    TextType.body1,
-                    ScreenConfig.textSizeMultiplier,
-                  ),
-                  textAlign: TextAlign.justify,
+        body: Container(
+          height: ScreenConfig.screenHeight,
+          child: ListView(
+            padding: EdgeInsets.symmetric(horizontal: ScreenConfig.safeBlockVertical * 16),
+            children: <Widget>[
+              Image.asset('assets/images/keselamatan_di_kolam.png'),
+              Text(
+                'Dalam melakukan aktivitas di air ada beberapa hal yang harus diperhatikan antara lain:',
+                style: MyTextTheme.style(
+                  TextType.body1,
+                  ScreenConfig.textSizeMultiplier,
                 ),
-                SizedBox(
-                  height: 5,
-                ),
-                ListView.builder(
-                  shrinkWrap: true,
-                  itemCount: SWIMMING_SAFETY.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    return Padding(
-                      padding: EdgeInsets.only(bottom: 5),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: <Widget>[
-                          Text(
-                            '${SWIMMING_SAFETY.length - (SWIMMING_SAFETY.length - (index + 1))}.',
+                textAlign: TextAlign.justify,
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              ListView.builder(
+                shrinkWrap: true,
+                physics: NeverScrollableScrollPhysics(),
+                itemCount: SWIMMING_SAFETY.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return Padding(
+                    padding: EdgeInsets.only(bottom: 5),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: <Widget>[
+                        Expanded(
+                          child: Text(
+                            SWIMMING_SAFETY[index],
                             style: MyTextTheme.style(
                               TextType.body1,
                               ScreenConfig.textSizeMultiplier,
                             ),
+                            textAlign: TextAlign.justify,
                           ),
-                          SizedBox(
-                            width: 5,
-                          ),
-                          Expanded(
-                            child: Text(
-                              SWIMMING_SAFETY[index],
-                              style: MyTextTheme.style(
-                                TextType.body1,
-                                ScreenConfig.textSizeMultiplier,
-                              ),
-                              textAlign: TextAlign.justify,
-                            ),
-                          )
-                        ],
-                      ),
-                    );
-                  },
-                )
-              ],
-            ),
+                        )
+                      ],
+                    ),
+                  );
+                },
+              )
+            ],
           ),
         ),
       ),

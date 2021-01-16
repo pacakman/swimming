@@ -9,7 +9,7 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
     ScreenConfig().init(context);
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Standar Ukuran Kolam Renang',
+        title: '2. Dasar Pengetahuan Renang',
       ),
       body: SingleChildScrollView(
         physics: ScrollPhysics(),
@@ -48,10 +48,6 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
                             isBold: true,
                           ),
                         ),
-                        SizedBox(
-                          height: 5,
-                        ),
-                        Image.asset('assets/images/pool.png'),
                         SizedBox(
                           height: 5,
                         ),

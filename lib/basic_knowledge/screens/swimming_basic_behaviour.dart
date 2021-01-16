@@ -9,7 +9,7 @@ class SwimmingBasicBehaviourScreen extends StatelessWidget {
     ScreenConfig().init(context);
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Dasar Perilaku Dalam Berenang',
+        title: '3. Dasar Perilaku Dalam Berenang',
       ),
       body: SingleChildScrollView(
         child: Container(

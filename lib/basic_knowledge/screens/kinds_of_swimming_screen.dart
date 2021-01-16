@@ -9,7 +9,7 @@ class KindsOfSwimmingScreen extends StatelessWidget {
     ScreenConfig().init(context);
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Macam-maca Gaya Renang',
+        title: '2. Dasar Pengetahuan Renang',
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -34,7 +34,7 @@ class KindsOfSwimmingScreen extends StatelessWidget {
                     width: 5,
                   ),
                   Text(
-                    'Gaya Dada (Chest Stroke)',
+                    'Gaya Bebas (Crawl Stroke)',
                     style: MyTextTheme.style(
                       TextType.body1,
                       ScreenConfig.textSizeMultiplier,
@@ -63,7 +63,7 @@ class KindsOfSwimmingScreen extends StatelessWidget {
                     width: 5,
                   ),
                   Text(
-                    'Gaya Kupu-Kupu (Butterfly Stroke)',
+                    'Gaya Dada (Breaststroke)',
                     style: MyTextTheme.style(
                       TextType.body1,
                       ScreenConfig.textSizeMultiplier,
@@ -74,10 +74,7 @@ class KindsOfSwimmingScreen extends StatelessWidget {
               SizedBox(
                 height: 5,
               ),
-              Image.asset('assets/images/kupu2.png'),
-              SizedBox(
-                height: 32,
-              ),
+              Image.asset('assets/images/dada.png'),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
@@ -121,7 +118,7 @@ class KindsOfSwimmingScreen extends StatelessWidget {
                     width: 5,
                   ),
                   Text(
-                    'Gaya Bebas (Crawl Stroke)',
+                    'Gaya Kupu-Kupu (Butterfly Stroke)',
                     style: MyTextTheme.style(
                       TextType.body1,
                       ScreenConfig.textSizeMultiplier,
@@ -132,7 +129,7 @@ class KindsOfSwimmingScreen extends StatelessWidget {
               SizedBox(
                 height: 5,
               ),
-              Image.asset('assets/images/dada.png'),
+              Image.asset('assets/images/kupu2.png'),
             ],
           ),
         ),

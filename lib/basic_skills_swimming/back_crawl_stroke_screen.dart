@@ -9,7 +9,7 @@ class BackCrawlStrokeScreen extends StatelessWidget {
     ScreenConfig().init(context);
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Gaya Punggung',
+        title: '4. Dasar Keterampilan Renang',
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -19,7 +19,7 @@ class BackCrawlStrokeScreen extends StatelessWidget {
           ),
           child: Column(
             children: <Widget>[
-              Image.asset('assets/images/punggung.png'),
+              Image.asset('assets/images/gaya_punggung_1.png'),
               SizedBox(
                 height: 5,
               ),

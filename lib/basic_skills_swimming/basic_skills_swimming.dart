@@ -17,7 +17,7 @@ class BasicSkillsSwimmingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Dasar Keterampilan Renang',
+        title: '4. Dasar Keterampilan Renang',
       ),
       body: ListView.builder(
         itemCount: BASIC_SKILLS.length,

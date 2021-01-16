@@ -17,7 +17,7 @@ class GamesScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Permainan Di Air',
+        title: '5. Permainan Di Air',
       ),
       body: ListView.builder(
         itemCount: GAMES.length,

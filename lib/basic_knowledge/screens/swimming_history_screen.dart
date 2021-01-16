@@ -9,7 +9,7 @@ class SwimmingHistoryScreen extends StatelessWidget {
     ScreenConfig().init(context);
     return Scaffold(
       appBar: MyAppBar(
-        title: 'Sejarah Renang',
+        title: '2. Dasar Pengetahuan Renang',
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -23,17 +23,6 @@ class SwimmingHistoryScreen extends StatelessWidget {
               Image.asset('assets/images/sejarah_renang_1.png'),
               Text(
                 '     Dalam sejarah renang dijelaskan bahwa kegiatan renang sudah dikenal sejak jaman dahulu. Hal ini terbukti dengan adanya tanda-tanda peninggalan raja-raja atau kekaisaran, berupa gambar atau relief. Negara-negara yang terbukti bahwa renang sudah dikenal sejak jaman dahulu yaitu Cina, India, Yunani, Syiria dan negara lainnya. Ternyata di negara tersebut terdapat air yang menyebabkan adanya danau, sungai dan laut. Tempat-tempat tersebut merupakan tempat sumber pencaharian bagi masyarakat disekitarnya. Pada awalnya menangkap ikan, menyelam mencari kerang, atau terpaksa harus menyeberangi sungai ataupun danau untuk bertani, yang menyebabkan akhirnya renang bisa disukai.',
-                style: MyTextTheme.style(
-                  TextType.body1,
-                  ScreenConfig.textSizeMultiplier,
-                ),
-                textAlign: TextAlign.justify,
-              ),
-              SizedBox(
-                height: 5,
-              ),
-              Text(
-                '     Di Roma pada jaman kekaisaran, pemudanya diwajibkan untuk menjadi tentara, salah satu kegiatannya adalah latihan renang, yang diawasi secara ketat oleh prajuritnya. Saat itu di Roma terkenal para pemudanya mempunyai bentuk tubuh yang indah akibat renang.',
                 style: MyTextTheme.style(
                   TextType.body1,
                   ScreenConfig.textSizeMultiplier,
