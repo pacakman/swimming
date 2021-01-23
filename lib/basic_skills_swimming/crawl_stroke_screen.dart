@@ -2,8 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:swimming_exercise/utilities/components/my_app_bar.dart';
 import 'package:swimming_exercise/utilities/helper/screen_config.dart';
 import 'package:swimming_exercise/utilities/theme/my_text_theme.dart';
+import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
-class CrawlStrokeScreen extends StatelessWidget {
+class CrawlStrokeScreen extends StatefulWidget {
+  @override
+  _CrawlStrokeScreenState createState() => _CrawlStrokeScreenState();
+}
+
+class _CrawlStrokeScreenState extends State<CrawlStrokeScreen> {
+  YoutubePlayerController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = YoutubePlayerController(
+      initialVideoId: 'S6EXqdcZOWM',
+      params: YoutubePlayerParams(
+        showControls: false,
+        showFullscreenButton: false,
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     ScreenConfig().init(context);
@@ -155,10 +175,23 @@ class CrawlStrokeScreen extends StatelessWidget {
                   )
                 ],
               ),
+              SizedBox(
+                height: 5,
+              ),
+              YoutubePlayerIFrame(
+                controller: _controller,
+                aspectRatio: 16 / 9,
+              ),
             ],
           ),
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _controller.close();
   }
 }

@@ -3,8 +3,27 @@ import 'package:flutter/widgets.dart';
 import 'package:swimming_exercise/utilities/components/my_app_bar.dart';
 import 'package:swimming_exercise/utilities/helper/screen_config.dart';
 import 'package:swimming_exercise/utilities/theme/my_text_theme.dart';
+import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
-class FloatingScreen extends StatelessWidget {
+class FloatingScreen extends StatefulWidget {
+  @override
+  _FloatingScreenState createState() => _FloatingScreenState();
+}
+
+class _FloatingScreenState extends State<FloatingScreen> {
+  YoutubePlayerController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = YoutubePlayerController(
+      initialVideoId: 'kCKyZJt7YaM',
+      params: YoutubePlayerParams(
+        showControls: false,
+        showFullscreenButton: false,
+      ),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     ScreenConfig().init(context);
@@ -132,10 +151,23 @@ class FloatingScreen extends StatelessWidget {
                   )
                 ],
               ),
+              SizedBox(
+                height: 5,
+              ),
+              YoutubePlayerIFrame(
+                controller: _controller,
+                aspectRatio: 16 / 9,
+              ),
             ],
           ),
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _controller.close();
   }
 }

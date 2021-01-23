@@ -3,16 +3,28 @@ import 'package:flutter/widgets.dart';
 import 'package:swimming_exercise/utilities/components/my_app_bar.dart';
 import 'package:swimming_exercise/utilities/helper/screen_config.dart';
 import 'package:swimming_exercise/utilities/theme/my_text_theme.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
-class JumpToWaterScreen extends StatelessWidget {
-  final YoutubePlayerController _controller = YoutubePlayerController(
-    initialVideoId: '-3upDuoKY1s',
-    flags: YoutubePlayerFlags(
-      mute: false,
-      autoPlay: false,
-    ),
-  );
+class JumpToWaterScreen extends StatefulWidget {
+  @override
+  _JumpToWaterScreenState createState() => _JumpToWaterScreenState();
+}
+
+class _JumpToWaterScreenState extends State<JumpToWaterScreen> {
+  YoutubePlayerController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = YoutubePlayerController(
+      initialVideoId: '-3upDuoKY1s',
+      params: YoutubePlayerParams(
+        showControls: false,
+        showFullscreenButton: false,
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     ScreenConfig().init(context);
@@ -181,18 +193,21 @@ class JumpToWaterScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 16,
+                height: 5,
               ),
-              Container(
-                child: YoutubePlayer(
-                  controller: _controller,
-                  showVideoProgressIndicator: false,
-                ),
+              YoutubePlayerIFrame(
+                controller: _controller,
+                aspectRatio: 16 / 9,
               ),
             ],
           ),
         ),
       ),
     );
+  }
+  @override
+  void dispose() {
+    super.dispose();
+    _controller.close();
   }
 }

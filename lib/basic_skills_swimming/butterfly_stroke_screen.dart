@@ -2,16 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:swimming_exercise/utilities/components/my_app_bar.dart';
 import 'package:swimming_exercise/utilities/helper/screen_config.dart';
 import 'package:swimming_exercise/utilities/theme/my_text_theme.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
-class ButterflyStrokeScreen extends StatelessWidget {
-  final YoutubePlayerController _controller = YoutubePlayerController(
-    initialVideoId: '-a-CqIlLmFc',
-    flags: YoutubePlayerFlags(
-      mute: false,
-      autoPlay: false,
-    ),
-  );
+class ButterflyStrokeScreen extends StatefulWidget {
+  @override
+  _ButterflyStrokeScreenState createState() => _ButterflyStrokeScreenState();
+}
+
+class _ButterflyStrokeScreenState extends State<ButterflyStrokeScreen> {
+  YoutubePlayerController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = YoutubePlayerController(
+      initialVideoId: '-a-CqIlLmFc',
+      params: YoutubePlayerParams(
+        showControls: false,
+        showFullscreenButton: false,
+      ),
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -140,16 +152,20 @@ class ButterflyStrokeScreen extends StatelessWidget {
               SizedBox(
                 height: 16,
               ),
-              Container(
-                child: YoutubePlayer(
-                  controller: _controller,
-                  showVideoProgressIndicator: false,
-                ),
+              YoutubePlayerIFrame(
+                controller: _controller,
+                aspectRatio: 16 / 9,
               ),
             ],
           ),
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _controller.close();
   }
 }

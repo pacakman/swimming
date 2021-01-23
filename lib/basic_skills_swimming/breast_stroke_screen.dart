@@ -2,8 +2,27 @@ import 'package:flutter/material.dart';
 import 'package:swimming_exercise/utilities/components/my_app_bar.dart';
 import 'package:swimming_exercise/utilities/helper/screen_config.dart';
 import 'package:swimming_exercise/utilities/theme/my_text_theme.dart';
+import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
-class BreastStrokeScreen extends StatelessWidget {
+class BreastStrokeScreen extends StatefulWidget {
+  @override
+  _BreastStrokeScreenState createState() => _BreastStrokeScreenState();
+}
+
+class _BreastStrokeScreenState extends State<BreastStrokeScreen> {
+  YoutubePlayerController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = YoutubePlayerController(
+      initialVideoId: '8kP_Ox5wfmY',
+      params: YoutubePlayerParams(
+        showControls: false,
+        showFullscreenButton: false,
+      ),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     ScreenConfig().init(context);
@@ -131,10 +150,23 @@ class BreastStrokeScreen extends StatelessWidget {
                   )
                 ],
               ),
+              SizedBox(
+                height: 5,
+              ),
+              YoutubePlayerIFrame(
+                controller: _controller,
+                aspectRatio: 16 / 9,
+              ),
             ],
           ),
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _controller.close();
   }
 }
