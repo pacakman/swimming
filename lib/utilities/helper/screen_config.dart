@@ -31,6 +31,6 @@ class ScreenConfig {
     safeBlockHorizontal = (screenWidth - _safeAreaHorizontal) / _widthDivider;
     safeBlockVertical = (screenHeight - _safeAreaVertical) / _heightDivider;
 
-    textSizeMultiplier = safeBlockHorizontal;
+    textSizeMultiplier = _mediaQueryData.orientation == Orientation.portrait ? safeBlockHorizontal : safeBlockHorizontal/2;
   }
 }

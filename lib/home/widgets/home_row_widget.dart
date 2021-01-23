@@ -36,6 +36,7 @@ class HomeRowWidget extends StatelessWidget {
                     TextType.body1,
                     ScreenConfig.textSizeMultiplier,
                     isBold: true,
+                    textColor: Colors.black
                   ),
                 ),
                 Icon(

@@ -3,8 +3,16 @@ import 'package:flutter/widgets.dart';
 import 'package:swimming_exercise/utilities/components/my_app_bar.dart';
 import 'package:swimming_exercise/utilities/helper/screen_config.dart';
 import 'package:swimming_exercise/utilities/theme/my_text_theme.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class JumpToWaterScreen extends StatelessWidget {
+  final YoutubePlayerController _controller = YoutubePlayerController(
+    initialVideoId: '-3upDuoKY1s',
+    flags: YoutubePlayerFlags(
+      mute: false,
+      autoPlay: false,
+    ),
+  );
   @override
   Widget build(BuildContext context) {
     ScreenConfig().init(context);
@@ -14,7 +22,13 @@ class JumpToWaterScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Container(
-          margin: EdgeInsets.symmetric(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/lautan.jpg"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          padding: EdgeInsets.symmetric(
               horizontal: 16,
               vertical: 10
           ),
@@ -163,8 +177,17 @@ class JumpToWaterScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                  )
+                  ),
                 ],
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Container(
+                child: YoutubePlayer(
+                  controller: _controller,
+                  showVideoProgressIndicator: false,
+                ),
               ),
             ],
           ),

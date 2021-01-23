@@ -19,72 +19,80 @@ class BasicSkillsSwimmingScreen extends StatelessWidget {
       appBar: MyAppBar(
         title: '4. Dasar Keterampilan Renang',
       ),
-      body: ListView.builder(
-        itemCount: BASIC_SKILLS.length,
-        itemBuilder: (BuildContext context, int index) {
-          return HomeRowWidget(
-            title: BASIC_SKILLS[index],
-            onTap: () {
-              if (index == 0) {
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (context) => JumpToWaterScreen(),
-                  ),
-                );
-              }
-              else if (index == 1) {
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (context) => FloatingScreen(),
-                  ),
-                );
-              }
-              else if (index == 2) {
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (context) => SlideScreen(),
-                  ),
-                );
-              }
-              else if (index == 3) {
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (context) => CrawlStrokeScreen(),
-                  ),
-                );
-              }
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/lautan.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: ListView.builder(
+          itemCount: BASIC_SKILLS.length,
+          itemBuilder: (BuildContext context, int index) {
+            return HomeRowWidget(
+              title: BASIC_SKILLS[index],
+              onTap: () {
+                if (index == 0) {
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => JumpToWaterScreen(),
+                    ),
+                  );
+                }
+                else if (index == 1) {
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => FloatingScreen(),
+                    ),
+                  );
+                }
+                else if (index == 2) {
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => SlideScreen(),
+                    ),
+                  );
+                }
+                else if (index == 3) {
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => CrawlStrokeScreen(),
+                    ),
+                  );
+                }
 
-              else if (index == 4) {
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (context) => BreastStrokeScreen(),
-                  ),
-                );
+                else if (index == 4) {
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => BreastStrokeScreen(),
+                    ),
+                  );
+                }
+                else if (index == 5) {
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => BackCrawlStrokeScreen(),
+                    ),
+                  );
+                }
+                else if (index == 6) {
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => ButterflyStrokeScreen(),
+                    ),
+                  );
+                }
+                else if (index == 7) {
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => ChangeStyleScreen(),
+                    ),
+                  );
+                }
               }
-              else if (index == 5) {
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (context) => BackCrawlStrokeScreen(),
-                  ),
-                );
-              }
-              else if (index == 6) {
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (context) => ButterflyStrokeScreen(),
-                  ),
-                );
-              }
-              else if (index == 7) {
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (context) => ChangeStyleScreen(),
-                  ),
-                );
-              }
-            }
-          );
-        },
+            );
+          },
+        ),
       ),
     );
   }

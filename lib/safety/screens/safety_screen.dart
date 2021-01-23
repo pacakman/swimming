@@ -15,6 +15,12 @@ class SafetyScreen extends StatelessWidget {
           title: '1. Keselamatan di Kolam Renang',
         ),
         body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/lautan.jpg"),
+              fit: BoxFit.cover,
+            ),
+          ),
           height: ScreenConfig.screenHeight,
           child: ListView(
             padding: EdgeInsets.symmetric(horizontal: ScreenConfig.safeBlockVertical * 16),

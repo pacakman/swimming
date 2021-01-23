@@ -18,40 +18,48 @@ class BasicKnowledgeScreen extends StatelessWidget {
         appBar: MyAppBar(
           title: '2. Dasar Pengetahuan Renang',
         ),
-        body: ListView.builder(
-          itemCount: BASIC_KNOWLEDGE_MENUS.length,
-          itemBuilder: (BuildContext context, int index) {
-            return HomeRowWidget(
-              title: BASIC_KNOWLEDGE_MENUS[index],
-              onTap: () {
-                if (index == 0) {
-                  Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (context) => SwimmingHistoryScreen(),
-                    ),
-                  );
-                } else if (index == 1) {
-                  Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (context) => SwimmingEquipmentScreen(),
-                    ),
-                  );
-                } else if (index == 2) {
-                  Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (context) => KindsOfSwimmingScreen(),
-                    ),
-                  );
-                } else if (index == 3) {
-                  Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (context) => SwimmingStandardSizeScreen(),
-                    ),
-                  );
-                }
-              },
-            );
-          },
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/lautan.jpg"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: ListView.builder(
+            itemCount: BASIC_KNOWLEDGE_MENUS.length,
+            itemBuilder: (BuildContext context, int index) {
+              return HomeRowWidget(
+                title: BASIC_KNOWLEDGE_MENUS[index],
+                onTap: () {
+                  if (index == 0) {
+                    Navigator.of(context).push(
+                      CupertinoPageRoute(
+                        builder: (context) => SwimmingHistoryScreen(),
+                      ),
+                    );
+                  } else if (index == 1) {
+                    Navigator.of(context).push(
+                      CupertinoPageRoute(
+                        builder: (context) => SwimmingEquipmentScreen(),
+                      ),
+                    );
+                  } else if (index == 2) {
+                    Navigator.of(context).push(
+                      CupertinoPageRoute(
+                        builder: (context) => KindsOfSwimmingScreen(),
+                      ),
+                    );
+                  } else if (index == 3) {
+                    Navigator.of(context).push(
+                      CupertinoPageRoute(
+                        builder: (context) => SwimmingStandardSizeScreen(),
+                      ),
+                    );
+                  }
+                },
+              );
+            },
+          ),
         ),
       ),
     );

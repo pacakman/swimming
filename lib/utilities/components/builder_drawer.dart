@@ -13,6 +13,7 @@ class BuilderDrawer extends StatefulWidget {
 
 class _BuilderDrawerState extends State<BuilderDrawer> {
   String version = '1.0.0';
+
   @override
   void initState() {
     super.initState();
@@ -30,29 +31,18 @@ class _BuilderDrawerState extends State<BuilderDrawer> {
     ScreenConfig().init(context);
 
     return Drawer(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Stack(
         children: [
-          Column(
+          ListView(
             children: [
               UserAccountsDrawerHeader(
-                currentAccountPicture: CircleAvatar(
-                  backgroundColor: Colors.white,
-                  child: Text(
-                    'IL',
-                    style: MyTextTheme.style(
-                      TextType.number1,
-                      ScreenConfig.textSizeMultiplier,
-                      isBold: true,
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                ),
+                currentAccountPicture: Image.asset('assets/images/logo.png'),
                 accountName: Text(
                   'Irfan Lutfianto',
                   style: MyTextTheme.style(
                     TextType.body1,
                     ScreenConfig.textSizeMultiplier,
+                    textColor: Colors.black,
                   ),
                   textAlign: TextAlign.justify,
                 ),
@@ -61,6 +51,7 @@ class _BuilderDrawerState extends State<BuilderDrawer> {
                   style: MyTextTheme.style(
                     TextType.body1,
                     ScreenConfig.textSizeMultiplier,
+                    textColor: Colors.black,
                   ),
                   textAlign: TextAlign.justify,
                 ),
@@ -76,15 +67,18 @@ class _BuilderDrawerState extends State<BuilderDrawer> {
                 title: Text(
                   'BERANDA',
                   style: MyTextTheme.style(
-                    TextType.body0,
+                    TextType.body1,
                     ScreenConfig.textSizeMultiplier,
+                    textColor: Colors.black,
                   ),
                   textAlign: TextAlign.justify,
                 ),
                 selectedTileColor: Colors.blue,
                 trailing: Icon(Icons.arrow_forward_ios),
               ),
-              Divider(thickness: 1,),
+              Divider(
+                thickness: 1,
+              ),
               ListTile(
                 onTap: () {
                   Navigator.of(context).push(
@@ -96,27 +90,32 @@ class _BuilderDrawerState extends State<BuilderDrawer> {
                 title: Text(
                   'TENTANG SAYA',
                   style: MyTextTheme.style(
-                    TextType.body0,
+                    TextType.body1,
                     ScreenConfig.textSizeMultiplier,
+                    textColor: Colors.black,
                   ),
                   textAlign: TextAlign.justify,
                 ),
                 selectedTileColor: Colors.blue,
                 trailing: Icon(Icons.arrow_forward_ios),
-              )
+              ),
             ],
           ),
-          Padding(
-            padding: EdgeInsets.all(ScreenConfig.safeBlockVertical * 16.0),
-            child: Text(
-              'v$version',
-              style: MyTextTheme.style(
-                TextType.heading4,
-                ScreenConfig.textSizeMultiplier,
-              ),
-              textAlign: TextAlign.justify,
-            ),
-          )
+          Positioned(
+            bottom: 0,
+              left: 0,
+              right: 0,
+              child: Center(
+                child: Text(
+                  'v$version',
+                  style: MyTextTheme.style(
+                    TextType.heading4,
+                    ScreenConfig.textSizeMultiplier,
+                    textColor: Colors.black
+                  ),
+                  textAlign: TextAlign.justify,
+                ),
+              ))
         ],
       ),
     );

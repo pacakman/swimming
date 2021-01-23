@@ -19,50 +19,58 @@ class GamesScreen extends StatelessWidget {
       appBar: MyAppBar(
         title: '5. Permainan Di Air',
       ),
-      body: ListView.builder(
-        itemCount: GAMES.length,
-        itemBuilder: (BuildContext context, int index) {
-          return HomeRowWidget(
-            title: GAMES[index],
-            onTap: () {
-              if (index == 0){
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (context) => TrainRaceScreen(),
-                  ),
-                );
-              }
-              else if (index == 1){
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (context) => MoveRaceScreen(),
-                  ),
-                );
-              }
-              else if (index == 2){
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (context) => TipToeRaceScreen(),
-                  ),
-                );
-              }
-              else if (index == 3){
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (context) => ZigZagRaceScreen(),
-                  ),
-                );
-              }
-              else if (index == 4){
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (context) => SlidingRaceScreen(),
-                  ),
-                );
-              }
-            },
-          );
-        },
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/lautan.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: ListView.builder(
+          itemCount: GAMES.length,
+          itemBuilder: (BuildContext context, int index) {
+            return HomeRowWidget(
+              title: GAMES[index],
+              onTap: () {
+                if (index == 0){
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => TrainRaceScreen(),
+                    ),
+                  );
+                }
+                else if (index == 1){
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => MoveRaceScreen(),
+                    ),
+                  );
+                }
+                else if (index == 2){
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => TipToeRaceScreen(),
+                    ),
+                  );
+                }
+                else if (index == 3){
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => ZigZagRaceScreen(),
+                    ),
+                  );
+                }
+                else if (index == 4){
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => SlidingRaceScreen(),
+                    ),
+                  );
+                }
+              },
+            );
+          },
+        ),
       ),
     );
   }

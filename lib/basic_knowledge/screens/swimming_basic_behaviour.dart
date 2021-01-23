@@ -13,7 +13,13 @@ class SwimmingBasicBehaviourScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Container(
-          margin: EdgeInsets.symmetric(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/lautan.jpg"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          padding: EdgeInsets.symmetric(
             horizontal: 16,
             vertical: 10,
           ),

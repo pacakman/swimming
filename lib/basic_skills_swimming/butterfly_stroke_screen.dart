@@ -4,25 +4,14 @@ import 'package:swimming_exercise/utilities/helper/screen_config.dart';
 import 'package:swimming_exercise/utilities/theme/my_text_theme.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class ButterflyStrokeScreen extends StatefulWidget {
-  @override
-  _ButterflyStrokeScreenState createState() => _ButterflyStrokeScreenState();
-}
-
-class _ButterflyStrokeScreenState extends State<ButterflyStrokeScreen> {
-  YoutubePlayerController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = YoutubePlayerController(
-      initialVideoId: '-a-CqIlLmFc',
-      flags: YoutubePlayerFlags(
-        mute: false,
-        autoPlay: false,
-      ),
-    );
-  }
+class ButterflyStrokeScreen extends StatelessWidget {
+  final YoutubePlayerController _controller = YoutubePlayerController(
+    initialVideoId: '-a-CqIlLmFc',
+    flags: YoutubePlayerFlags(
+      mute: false,
+      autoPlay: false,
+    ),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +22,13 @@ class _ButterflyStrokeScreenState extends State<ButterflyStrokeScreen> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          margin: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/lautan.jpg"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
           child: Column(
             children: <Widget>[
               Image.asset('assets/images/gaya_kupu_1.png'),
@@ -148,7 +143,7 @@ class _ButterflyStrokeScreenState extends State<ButterflyStrokeScreen> {
               Container(
                 child: YoutubePlayer(
                   controller: _controller,
-                  showVideoProgressIndicator: true,
+                  showVideoProgressIndicator: false,
                 ),
               ),
             ],

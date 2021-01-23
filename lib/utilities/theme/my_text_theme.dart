@@ -24,7 +24,7 @@ enum TextType {
 class MyTextTheme {
   static TextStyle style(TextType textType,
       double multiplier, {
-        Color textColor = Colors.black,
+        Color textColor = Colors.white,
         bool isBold = false,
         double height = 0,
         double letterSpacing = 0,
