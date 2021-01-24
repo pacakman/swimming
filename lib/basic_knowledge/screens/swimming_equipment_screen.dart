@@ -24,7 +24,20 @@ class SwimmingEquipmentScreen extends StatelessWidget {
             vertical: 10
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Text(
+                'b. Perlengkapan Renang',
+                style: MyTextTheme.style(
+                  TextType.body0,
+                  ScreenConfig.textSizeMultiplier,
+                  isBold: true,
+                ),
+                textAlign: TextAlign.start,
+              ),
+              SizedBox(
+                height: 5,
+              ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[

@@ -33,6 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
             style: MyTextTheme.style(
               TextType.number1,
               ScreenConfig.textSizeMultiplier,
+              textColor: Colors.black,
             ),
             textAlign: TextAlign.justify,
           ),

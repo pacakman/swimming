@@ -45,7 +45,20 @@ class _SlideScreenState extends State<SlideScreen> {
               vertical: 10
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Text(
+                'c. Meluncur',
+                style: MyTextTheme.style(
+                  TextType.body0,
+                  ScreenConfig.textSizeMultiplier,
+                  isBold: true,
+                ),
+                textAlign: TextAlign.start,
+              ),
+              SizedBox(
+                height: 5,
+              ),
               Image.asset('assets/images/meluncur.png'),
               SizedBox(
                 height: 5,

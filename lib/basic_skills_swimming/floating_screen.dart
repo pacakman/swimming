@@ -44,7 +44,17 @@ class _FloatingScreenState extends State<FloatingScreen> {
               vertical: 10
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Text(
+                'b. Mengapung',
+                style: MyTextTheme.style(
+                  TextType.body0,
+                  ScreenConfig.textSizeMultiplier,
+                  isBold: true,
+                ),
+                textAlign: TextAlign.start,
+              ),
               Image.asset('assets/images/mengapung.png'),
               SizedBox(
                 height: 5,

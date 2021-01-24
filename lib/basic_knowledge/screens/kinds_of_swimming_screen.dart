@@ -24,7 +24,20 @@ class KindsOfSwimmingScreen extends StatelessWidget {
             vertical: 10,
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Text(
+                'c. Macam-macam Gaya Renang',
+                style: MyTextTheme.style(
+                  TextType.body0,
+                  ScreenConfig.textSizeMultiplier,
+                  isBold: true,
+                ),
+                textAlign: TextAlign.start,
+              ),
+              SizedBox(
+                height: 5,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[

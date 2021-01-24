@@ -25,7 +25,20 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
             vertical: 10,
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Text(
+                'd. Standar Ukuran Kolam Renang',
+                style: MyTextTheme.style(
+                  TextType.body0,
+                  ScreenConfig.textSizeMultiplier,
+                  isBold: true,
+                ),
+                textAlign: TextAlign.start,
+              ),
+              SizedBox(
+                height: 5,
+              ),
               Image.asset('assets/images/standar_kolam.png'),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,

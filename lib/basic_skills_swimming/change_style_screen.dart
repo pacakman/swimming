@@ -45,7 +45,20 @@ class _ChangeStyleScreenState extends State<ChangeStyleScreen> {
               vertical: 10
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Text(
+                'h. Gaya Ganti',
+                style: MyTextTheme.style(
+                  TextType.body0,
+                  ScreenConfig.textSizeMultiplier,
+                  isBold: true,
+                ),
+                textAlign: TextAlign.start,
+              ),
+              SizedBox(
+                height: 5,
+              ),
               Text(
                 '     Pada nomor gaya ganti perorangan, seorang perenang memakai keempat gaya secara bergantian untuk satu putaran, dengan urutan: gaya kupu-kupu, gaya punggung, gaya dada, dan gaya bebas.',
                 style: MyTextTheme.style(

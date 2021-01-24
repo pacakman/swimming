@@ -42,7 +42,20 @@ class _ButterflyStrokeScreenState extends State<ButterflyStrokeScreen> {
           ),
           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Text(
+                'g. Gaya Kupu-Kupu',
+                style: MyTextTheme.style(
+                  TextType.body0,
+                  ScreenConfig.textSizeMultiplier,
+                  isBold: true,
+                ),
+                textAlign: TextAlign.start,
+              ),
+              SizedBox(
+                height: 5,
+              ),
               Image.asset('assets/images/gaya_kupu_1.png'),
               SizedBox(
                 height: 5,

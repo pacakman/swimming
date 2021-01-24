@@ -26,6 +26,18 @@ class SwimmingHistoryScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Text(
+                'a. Sejarah Renang',
+                style: MyTextTheme.style(
+                  TextType.body0,
+                  ScreenConfig.textSizeMultiplier,
+                  isBold: true,
+                ),
+                textAlign: TextAlign.start,
+              ),
+              SizedBox(
+                height: 5,
+              ),
               Image.asset('assets/images/sejarah_renang_1.png'),
               Text(
                 '     Dalam sejarah renang dijelaskan bahwa kegiatan renang sudah dikenal sejak jaman dahulu. Hal ini terbukti dengan adanya tanda-tanda peninggalan raja-raja atau kekaisaran, berupa gambar atau relief. Negara-negara yang terbukti bahwa renang sudah dikenal sejak jaman dahulu yaitu Cina, India, Yunani, Syiria dan negara lainnya. Ternyata di negara tersebut terdapat air yang menyebabkan adanya danau, sungai dan laut. Tempat-tempat tersebut merupakan tempat sumber pencaharian bagi masyarakat disekitarnya. Pada awalnya menangkap ikan, menyelam mencari kerang, atau terpaksa harus menyeberangi sungai ataupun danau untuk bertani, yang menyebabkan akhirnya renang bisa disukai.',

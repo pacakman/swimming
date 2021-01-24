@@ -44,7 +44,20 @@ class _BackCrawlStrokeScreenState extends State<BackCrawlStrokeScreen> {
               vertical: 10
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Text(
+                'f. Gaya Punggung',
+                style: MyTextTheme.style(
+                  TextType.body0,
+                  ScreenConfig.textSizeMultiplier,
+                  isBold: true,
+                ),
+                textAlign: TextAlign.start,
+              ),
+              SizedBox(
+                height: 5,
+              ),
               Image.asset('assets/images/gaya_punggung_1.png'),
               SizedBox(
                 height: 5,
@@ -139,7 +152,7 @@ class _BackCrawlStrokeScreenState extends State<BackCrawlStrokeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'Gerakan kombinasi tangan, kaki, dan mengambil napas: Posisi kaki terus bergerak seperti: (1) Kaki kanan dan kiri digerakkan naik turun secara bergantian (seperti orang yang sedang berjalan), (2) Kaki digerakkan secara bergantian dengan cukup cepat agar arah renang tidak melenceng/ berbelok.',
+                          'Gerakan kombinasi tangan, kaki, dan mengambil napas: (1) Posisi kaki terus bergerak dengan posisi kaki kanan dan kaki kiri bergantian, (2) Kemudian gerakan tangan juga dilakukan secara bergantian terus menerus. (3) Pengambilan nafas tentu tidak ada masalah karena posisi tubuh menghadap keatas dengan hidung berada dipermukaan air.',
                           style: MyTextTheme.style(
                             TextType.body1,
                             ScreenConfig.textSizeMultiplier,

@@ -45,7 +45,20 @@ class _JumpToWaterScreenState extends State<JumpToWaterScreen> {
               vertical: 10
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Text(
+                'a. Masuk Ke Air',
+                style: MyTextTheme.style(
+                  TextType.body0,
+                  ScreenConfig.textSizeMultiplier,
+                  isBold: true,
+                ),
+                textAlign: TextAlign.start,
+              ),
+              SizedBox(
+                height: 5,
+              ),
               Image.asset('assets/images/masuk_air.png'),
               Text(
                 '     Bagi perenang pemula perlu kesiapan mental yang baik diimbangi dengan keberanian untuk mulai masuk ke air. Adapun cara untuk meminimalisir kesalahan dalam melakukan masuk ke air:',

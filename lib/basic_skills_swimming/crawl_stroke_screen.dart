@@ -44,7 +44,20 @@ class _CrawlStrokeScreenState extends State<CrawlStrokeScreen> {
               vertical: 10
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Text(
+                'd. Gaya Bebas',
+                style: MyTextTheme.style(
+                  TextType.body0,
+                  ScreenConfig.textSizeMultiplier,
+                  isBold: true,
+                ),
+                textAlign: TextAlign.start,
+              ),
+              SizedBox(
+                height: 5,
+              ),
               Image.asset('assets/images/gaya_bebas_1.png'),
               SizedBox(
                 height: 5,
@@ -64,27 +77,13 @@ class _CrawlStrokeScreenState extends State<CrawlStrokeScreen> {
                     width: 5,
                   ),
                   Expanded(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Gerakan Kaki',
-                          style: MyTextTheme.style(
-                              TextType.body1,
-                              ScreenConfig.textSizeMultiplier,
-                              isBold: true
-                          ),
-                        ),
-                        Text(
-                          'Gerakan kaki pada gaya bebas ini mudah dikuasai anak, karena kita sudah mulai melakukannya ketika untuk pertama kali kita bergerak di sekitar kolam dan menggerakkan kaki kita ke atas ke bawah sambil berpegangan pada papan peluncur. Biasanya awalnya dilakukan di pinggir kolam. Posisi kaki menyepak dengan mempergunakan papan peluncur. Papan peluncur dipegang di depan di atas permukaan air, dan meluncur dengan gerakan mendorong papan seluncur. Lalu gerakan meregangkan (julurkan) kaki ke belakang seolah-olah posisi berdiri jinjit dan mulailah menggerakkan seluruh kakimu ke atas dan ke bawah.',
-                          style: MyTextTheme.style(
-                            TextType.body1,
-                            ScreenConfig.textSizeMultiplier,
-                          ),
-                          textAlign: TextAlign.justify,
-                        ),
-                      ],
+                    child: Text(
+                      'Gerakan Kaki: (1) Menendang dengan kaki lurus, energy yang digunakan harus berasal dari pinggang dan paha bukan dari lutut, (2) Menendang sebanyak tiga kali setiap ayunan tangan, (3) Luruskan ujung-ujung jari kaki selama berenang, (4) Maksimalkan dorongan tubuh saat renang gaya bebas dengan cara memiringkan badan ke kanan dan kiri sesuai ayunan tangan. Putar tubuh ke kanan saat tangan dan pundak kanan bergerak kedepan, begitupun sebaliknya. Putarlah tubuh dari pinggang dan buka dari pundak.',
+                      style: MyTextTheme.style(
+                        TextType.body1,
+                        ScreenConfig.textSizeMultiplier,
+                      ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -107,27 +106,13 @@ class _CrawlStrokeScreenState extends State<CrawlStrokeScreen> {
                     width: 5,
                   ),
                   Expanded(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Gerakan Lengan',
-                          style: MyTextTheme.style(
-                              TextType.body1,
-                              ScreenConfig.textSizeMultiplier,
-                              isBold: true
-                          ),
-                        ),
-                        Text(
-                          'Dapat kita ketahui bahwa gerakan tangan adalah gerakan yang menentukan yang menentukan kecepatan berenang. Hal itu perlu melakukannya dengan baik sejak awal, karena gerakan lengan inilah yang menjadi kunci renang yang cepat, efektif dan betul-betul bebas. Gerakan renang dilakukan dengan dua tahap. Yang satu dilakukan di dalam air sementara tangan menarik dan mendorong air ke belakang dengan melajunya tubuhnya ke depan. Yang satu lagi di lakukan di atas air untuk gerakan selanjutnya. Gerakan inilah yang dikenal dengan istilah asing “recovery” (pemulihan kembali). Tetapi semua gerakan ini dilakukan secara kontinu.',
-                          style: MyTextTheme.style(
-                            TextType.body1,
-                            ScreenConfig.textSizeMultiplier,
-                          ),
-                          textAlign: TextAlign.justify,
-                        ),
-                      ],
+                    child: Text(
+                      'Gerakan Lengan: (1) Gerakkan tangan kanan ke bawah lalu kebelakang dengan posisi vertical. Pada saat yang sama, siku dam lengan atas tangan kiri tetap berada diatas permukaan air dan bergerak sedikit keluar, (2) Ayunkan tangan kanan yang berada di air kearah badan. Gunakan gerakan ini untuk membantu mendorong badan ke depan, (3) Tangan kanan akan berayun kearah pinggang, miringkan badan agar tangan kanan dapat berayun tanpa terhalang pinggang, (4) Setelah tangan kanan berayun kearah badan, angkat siku tangan kanan keatas permukaan air hingga ujung siku menunjuk arah atas. Tangan harus rileks dengan jari-jari yang sedikit terbuka. Lakukan ayunan ini dengan gerakan memutar, (5) Lakukan cara berayun yang sama pada tangan kiri untuk melanjutkan gerakan renang gaya bebas.',
+                      style: MyTextTheme.style(
+                        TextType.body1,
+                        ScreenConfig.textSizeMultiplier,
+                      ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
@@ -150,27 +135,13 @@ class _CrawlStrokeScreenState extends State<CrawlStrokeScreen> {
                     width: 5,
                   ),
                   Expanded(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Pernapasan',
-                          style: MyTextTheme.style(
-                            TextType.body1,
-                            ScreenConfig.textSizeMultiplier,
-                            isBold: true
-                          ),
-                        ),
-                        Text(
-                          'Posisi yang terbaik untuk napas pada gaya bebas ini adalah ketika kepala masih rendah di dalam air dan mulutmu membuka. Jika kepala keluar dari air akan merusak gaya, membuat lelah dan sangat memakan energi. Gerakan pun semakin lamban. Tangan di sebelah sisi yang akan dipakai sebagai sisi tarikan nafas masuk ke dalam air maka sebaiknya putar kepala ke sisi itu. Keluarkan nafas dengan hentakan (eksplosip). Langsung sesudahnya (ketika tangan ke luar dari dalam air) tariklah napas dengan cepat dan masukkanlah wajah kembali ke dalam air ketika tangan mengayun balik.',
-                          style: MyTextTheme.style(
-                            TextType.body1,
-                            ScreenConfig.textSizeMultiplier,
-                          ),
-                          textAlign: TextAlign.justify,
-                        ),
-                      ],
+                    child: Text(
+                      'Gerakan Kombinasi Tangan, Kaki dan Mengambil Nafas: (1) Posisi kaki terus bergerak dengan posisi kaki kanan dan kaki kiri bergantian, (2) Kemudian gerakan tangan juga dilakukan secara bergantian, (3) Ketika salah satu tangan berada didalam air untuk mengayuh, perenang bisa mengambil nafas dengan memiringkan kepala dengan memposisikan hidung diatas permukaan air untuk menghirup udara.',
+                      style: MyTextTheme.style(
+                        TextType.body1,
+                        ScreenConfig.textSizeMultiplier,
+                      ),
+                      textAlign: TextAlign.justify,
                     ),
                   )
                 ],
