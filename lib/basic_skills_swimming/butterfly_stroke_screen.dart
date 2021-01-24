@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:swimming_exercise/utilities/components/my_app_bar.dart';
 import 'package:swimming_exercise/utilities/helper/screen_config.dart';
 import 'package:swimming_exercise/utilities/theme/my_text_theme.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
 class ButterflyStrokeScreen extends StatefulWidget {
@@ -169,6 +170,44 @@ class _ButterflyStrokeScreenState extends State<ButterflyStrokeScreen> {
                 controller: _controller,
                 aspectRatio: 16 / 9,
               ),
+              SizedBox(
+                height: 5,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    'Lihat selengkapnya ',
+                    style: MyTextTheme.style(
+                      TextType.body1,
+                      ScreenConfig.textSizeMultiplier,
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  InkWell(
+                    onTap: () async {
+                      const url = 'https://youtu.be/-a-CqIlLmFc';
+                      if (await canLaunch(url)) {
+                        await launch(url);
+                      } else {
+                        throw 'Could not launch $url';
+                      }
+                    },
+                    child: Text(
+                      'klik disini',
+                      style: MyTextTheme.style(
+                        TextType.body1,
+                        ScreenConfig.textSizeMultiplier,
+                        isBold: true,
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
