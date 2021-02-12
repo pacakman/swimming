@@ -147,13 +147,13 @@ class _CrawlStrokeScreenState extends State<CrawlStrokeScreen> {
                   )
                 ],
               ),
-              SizedBox(
-                height: 5,
-              ),
-              YoutubePlayerIFrame(
-                controller: _controller,
-                aspectRatio: 16 / 9,
-              ),
+              // SizedBox(
+              //   height: 5,
+              // ),
+              // YoutubePlayerIFrame(
+              //   controller: _controller,
+              //   aspectRatio: 16 / 9,
+              // ),
               SizedBox(
                 height: 5,
               ),

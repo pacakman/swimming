@@ -163,13 +163,13 @@ class _ButterflyStrokeScreenState extends State<ButterflyStrokeScreen> {
                   ),
                 ],
               ),
-              SizedBox(
-                height: 16,
-              ),
-              YoutubePlayerIFrame(
-                controller: _controller,
-                aspectRatio: 16 / 9,
-              ),
+              // SizedBox(
+              //   height: 16,
+              // ),
+              // YoutubePlayerIFrame(
+              //   controller: _controller,
+              //   aspectRatio: 16 / 9,
+              // ),
               SizedBox(
                 height: 5,
               ),

@@ -104,13 +104,13 @@ class _ChangeStyleScreenState extends State<ChangeStyleScreen> {
                 ),
                 textAlign: TextAlign.justify,
               ),
-              SizedBox(
-                height: 5,
-              ),
-              YoutubePlayerIFrame(
-                controller: _controller,
-                aspectRatio: 16 / 9,
-              ),
+              // SizedBox(
+              //   height: 5,
+              // ),
+              // YoutubePlayerIFrame(
+              //   controller: _controller,
+              //   aspectRatio: 16 / 9,
+              // ),
               SizedBox(
                 height: 5,
               ),
