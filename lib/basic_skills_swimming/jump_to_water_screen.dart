@@ -49,7 +49,7 @@ class _JumpToWaterScreenState extends State<JumpToWaterScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'a. Masuk Ke Air',
+                'A. Start',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,
@@ -60,7 +60,7 @@ class _JumpToWaterScreenState extends State<JumpToWaterScreen> {
               SizedBox(
                 height: 5,
               ),
-              Image.asset('assets/images/masuk_air.png'),
+              Image.asset('assets/images/image_start.jpg'),
               Text(
                 '     Bagi perenang pemula perlu kesiapan mental yang baik diimbangi dengan keberanian untuk mulai masuk ke air. Adapun cara untuk meminimalisir kesalahan dalam melakukan masuk ke air:',
                 style: MyTextTheme.style(

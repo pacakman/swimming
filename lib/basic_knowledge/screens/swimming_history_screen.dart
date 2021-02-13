@@ -27,7 +27,7 @@ class SwimmingHistoryScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'a. Sejarah Renang',
+                'A. Sejarah Renang',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,

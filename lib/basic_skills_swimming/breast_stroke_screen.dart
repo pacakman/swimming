@@ -47,7 +47,7 @@ class _BreastStrokeScreenState extends State<BreastStrokeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'e. Gaya Dada',
+                'E. Gaya Dada',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,

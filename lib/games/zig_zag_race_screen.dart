@@ -27,7 +27,7 @@ class ZigZagRaceScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'd. Kereta Zig-Zag',
+                'D. Kereta Zig-Zag',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,

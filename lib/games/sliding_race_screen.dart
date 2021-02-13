@@ -27,7 +27,7 @@ class SlidingRaceScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'e. Balap Meluncur',
+                'E. Balap Meluncur',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,

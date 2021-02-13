@@ -49,7 +49,7 @@ class _ChangeStyleScreenState extends State<ChangeStyleScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'h. Gaya Ganti',
+                'H. Gaya Ganti',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,

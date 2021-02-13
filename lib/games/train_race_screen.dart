@@ -27,7 +27,7 @@ class TrainRaceScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'a. Balap Kereta',
+                'A. Balap Kereta',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,

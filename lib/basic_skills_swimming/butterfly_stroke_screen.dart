@@ -46,7 +46,7 @@ class _ButterflyStrokeScreenState extends State<ButterflyStrokeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'g. Gaya Kupu-Kupu',
+                'G. Gaya Kupu-Kupu',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,

@@ -22,14 +22,16 @@ enum TextType {
 }
 
 class MyTextTheme {
-  static TextStyle style(TextType textType,
-      double multiplier, {
-        Color textColor = Colors.white,
-        bool isBold = false,
-        double height = 0,
-        double letterSpacing = 0,
-        TextDecoration textDecoration = TextDecoration.none,
-      }) {
+  static TextStyle style(
+    TextType textType,
+    double multiplier, {
+    Color textColor = Colors.white,
+    bool isBold = false,
+    bool isNormal = true,
+    double height = 0,
+    double letterSpacing = 0,
+    TextDecoration textDecoration = TextDecoration.none,
+  }) {
     double _fontSize;
     double _height;
     switch (textType) {
@@ -115,13 +117,14 @@ class MyTextTheme {
         break;
     }
     return TextStyle(
-        color: textColor,
-        letterSpacing: letterSpacing,
-        fontSize: _fontSize * multiplier,
-        height: (height != 0) ? height : _height,
-        fontFamily: "avenir",
-        fontWeight: (isBold) ? FontWeight.w900 : FontWeight.normal,
-        decoration: textDecoration,
+      color: textColor,
+      letterSpacing: letterSpacing,
+      fontSize: _fontSize * multiplier,
+      height: (height != 0) ? height : _height,
+      fontFamily: "avenir",
+      fontWeight: (isBold) ? FontWeight.w900 : FontWeight.normal,
+      decoration: textDecoration,
+      fontStyle: isNormal ? FontStyle.normal : FontStyle.italic,
     );
   }
 }

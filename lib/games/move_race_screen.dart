@@ -27,7 +27,7 @@ class MoveRaceScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'b. Balap Memindah Batang Kayu',
+                'B. Balap Memindah Batang Kayu',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,

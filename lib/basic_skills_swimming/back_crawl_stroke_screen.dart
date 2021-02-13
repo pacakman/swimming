@@ -48,7 +48,7 @@ class _BackCrawlStrokeScreenState extends State<BackCrawlStrokeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'f. Gaya Punggung',
+                'F. Gaya Punggung',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,

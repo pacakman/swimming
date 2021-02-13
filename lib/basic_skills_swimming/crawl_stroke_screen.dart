@@ -48,7 +48,7 @@ class _CrawlStrokeScreenState extends State<CrawlStrokeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'd. Gaya Bebas',
+                'D. Gaya Bebas',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,

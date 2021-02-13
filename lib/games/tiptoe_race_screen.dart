@@ -27,7 +27,7 @@ class TipToeRaceScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'c. Jalan Jinjit',
+                'C. Jalan Jinjit',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,

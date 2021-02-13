@@ -27,7 +27,7 @@ class KindsOfSwimmingScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'c. Macam-macam Gaya Renang',
+                'C. Macam-macam Gaya Renang',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,

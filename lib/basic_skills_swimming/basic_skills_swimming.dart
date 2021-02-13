@@ -42,14 +42,14 @@ class BasicSkillsSwimmingScreen extends StatelessWidget {
                 else if (index == 1) {
                   Navigator.of(context).push(
                     CupertinoPageRoute(
-                      builder: (context) => FloatingScreen(),
+                      builder: (context) => SlideScreen(),
                     ),
                   );
                 }
                 else if (index == 2) {
                   Navigator.of(context).push(
                     CupertinoPageRoute(
-                      builder: (context) => SlideScreen(),
+                      builder: (context) => FloatingScreen(),
                     ),
                   );
                 }

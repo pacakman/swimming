@@ -48,7 +48,7 @@ class _FloatingScreenState extends State<FloatingScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'b. Mengapung',
+                'C. Mengapung',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,
@@ -56,7 +56,7 @@ class _FloatingScreenState extends State<FloatingScreen> {
                 ),
                 textAlign: TextAlign.start,
               ),
-              Image.asset('assets/images/mengapung.png'),
+              Image.asset('assets/images/image_floating.jpg'),
               SizedBox(
                 height: 5,
               ),
@@ -188,7 +188,7 @@ class _FloatingScreenState extends State<FloatingScreen> {
                   ),
                   InkWell(
                     onTap: () async {
-                      const url = 'https://youtu.be/kCKyZJt7YaM';
+                      const url = 'https://youtu.be/NxF9sBo-6sE';
                       if (await canLaunch(url)) {
                         await launch(url);
                       } else {

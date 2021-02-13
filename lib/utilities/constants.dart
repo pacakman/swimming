@@ -7,39 +7,39 @@ const List<String> HOME_MENUS = [
 ];
 
 const List<String> SWIMMING_SAFETY = [
-  'a. Kenali daerah dimana akan melakukan aktivitas di air, seperti kedalaman air karena bahaya-bahaya tersembunyi tidak terlihat dari atas permukaan air.',
-  'b. Memakai pakaian renang yang minim dan sesuai bentuk tubuh, memakai alat tambahan seperti pelampung, kacamata renang dan topi renang/cap.',
-  'c. Melakukan pemanasan di pinggir kolam sebelum melakukan olahraga renang.',
-  'd. Jangan melakukan aktivitas air dalam keadaan perut kosong atau baru saja makan. Hal ini akan membuat perut sakit atau muntah-muntah.',
-  'e. Jangan melakukan renang bagi orang yang mempunyai penyakit epilepsy sebab ketika mereka kelelahan sering penyakitnya kambuh kemudian tenggelam.',
-  'f. Jangan berlari atau saling mendorong ditepi kolam. Banyak kejadian jatuh ditepi kolam dengan kepala membentur lantai hal ini disebabkan karena licinnya lantai kolam.',
-  'g. Mengenali kondisi badan/tubuh sebelum melakukan olahraga renang.',
-  'h. Hindarilah berenang sendirian karena aktivitas di air perlu didampingi seseorang untuk dimintai pertolongan dalam keadaan darurat.'
+  'A. Kenali daerah dimana akan melakukan aktivitas di air, seperti kedalaman air karena bahaya-bahaya tersembunyi tidak terlihat dari atas permukaan air.',
+  'B. Memakai pakaian renang yang minim dan sesuai bentuk tubuh, memakai alat tambahan seperti pelampung, kacamata renang dan topi renang/cap.',
+  'C. Melakukan pemanasan di pinggir kolam sebelum melakukan olahraga renang.',
+  'D. Jangan melakukan aktivitas air dalam keadaan perut kosong atau baru saja makan. Hal ini akan membuat perut sakit atau muntah-muntah.',
+  'E. Jangan melakukan renang bagi orang yang mempunyai penyakit epilepsy sebab ketika mereka kelelahan sering penyakitnya kambuh kemudian tenggelam.',
+  'F. Jangan berlari atau saling mendorong ditepi kolam. Banyak kejadian jatuh ditepi kolam dengan kepala membentur lantai hal ini disebabkan karena licinnya lantai kolam.',
+  'G. Mengenali kondisi badan/tubuh sebelum melakukan olahraga renang.',
+  'I. Hindarilah berenang sendirian karena aktivitas di air perlu didampingi seseorang untuk dimintai pertolongan dalam keadaan darurat.'
 ];
 
 const List<String> BASIC_KNOWLEDGE_MENUS = [
-  'a. Sejarah Renang',
-  'b. Perlengkapan Renang',
-  'c. Macam-macam Gaya Renang',
-  'd. Standar Ukuran Kolam Renang',
+  'A. Sejarah Renang',
+  'B. Perlengkapan Renang',
+  'C. Macam-macam Gaya Renang',
+  'D. Standar Ukuran Kolam Renang',
 ];
 
 const List<String> BASIC_SKILLS = [
-  'a. Masuk Ke Air',
-  'b. Mengapung',
-  'c. Meluncur',
-  'd. Gaya Bebas',
-  'e. Gaya Dada',
-  'f. Gaya Punggung',
-  'g. Gaya Kupu-Kupu',
-  'h. Gaya Ganti'
+  'A. Start',
+  'B. Meluncur',
+  'C. Mengapung',
+  'D. Gaya Bebas',
+  'E. Gaya Dada',
+  'F. Gaya Punggung',
+  'G. Gaya Kupu-Kupu',
+  'H. Gaya Ganti'
 ];
 
 const List<String> GAMES = [
-  'a. Balap Kereta',
-  'b. Balap Memindah Batang Kayu',
-  'c. Jalan Jinjit',
-  'd. Kereta Zig-Zag',
-  'e. Balap Meluncur'
+  'A. Balap Kereta',
+  'B. Balap Memindah Batang Kayu',
+  'C. Jalan Jinjit',
+  'D. Kereta Zig-Zag',
+  'E. Balap Meluncur'
 ];
 

@@ -28,7 +28,7 @@ class SwimmingStandardSizeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'd. Standar Ukuran Kolam Renang',
+                'D. Standar Ukuran Kolam Renang',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,

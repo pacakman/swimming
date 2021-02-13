@@ -49,7 +49,7 @@ class _SlideScreenState extends State<SlideScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'c. Meluncur',
+                'B. Meluncur',
                 style: MyTextTheme.style(
                   TextType.body0,
                   ScreenConfig.textSizeMultiplier,
